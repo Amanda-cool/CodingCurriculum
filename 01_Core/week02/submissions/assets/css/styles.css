@@ -1,0 +1,181 @@
+@import "normalize.css";
+
+/* rainbow page*/
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+#rainbow_page {
+    margin: 20px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#container {
+    width: 500px;
+    text-align: center;
+    display: inline-block;
+    position: absolute;
+    left: 270px;
+    background: black;
+}
+
+ul {
+    list-style-type: none;
+    font-size: 30px;
+    padding: 50px;
+}
+
+#red {
+    color: red;
+    margin-bottom: 10px;
+}
+
+#orange {
+    color:orange;
+    margin-bottom: 10px;
+}
+
+#yellow {
+    color:yellow;
+    margin-bottom: 10px;
+}
+
+#green {
+    color:green;
+    margin-bottom: 10px;
+}
+
+#blue {
+    color: blue;
+    margin-bottom: 10px;
+}
+
+#purple {
+    color: purple;
+    margin-bottom: 10px;
+}
+
+/* for index.html */
+
+
+
+.gold_rainbows {
+    padding: 20px;
+}
+
+header nav {
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    display: block;
+    line-height: 30px;
+    font-size: 32px;
+    background-color: turquoise;
+    height: 200px;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 0 10px;
+    line-height: 10px;
+}
+
+.dropDown {
+    position: relative;
+}
+
+.dropContent {
+    display: none;
+    position: absolute;
+    font-size: 10px;
+
+
+}
+
+.dropDown:hover .dropContent {
+    display: block;
+}
+
+section {
+    overflow: auto;
+    background-color: white;
+    position: relative;
+}
+
+main {
+    width: 66%;
+    background-color: rgb(255, 255, 255);
+}
+
+aside {
+    width: 33%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: gold;
+}
+
+header {
+    background-color: white;
+    height: 200px;
+}
+
+.copy {
+    text-align: center;
+}
+
+#facebook {
+    color: black;
+}
+
+#instagram {
+    color: black;
+}
+
+#google {
+    color: black;
+}
+
+.pot_of_gold {
+    width: 100px;
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Form */
+
+.contact_header {
+    text-align: center;
+    background-color: gold;
+    font-family: 'Montserrat', Georgia, sans-serif;/*Why is montserrat not working on this page?*/
+    font-size: 48px;
+    padding-top: 40px;
+    height: 100px;
+
+}
+
+ .container_contact {
+     width: 800px;
+     margin: 0 auto;
+ }
+
+ form {
+     background-color: turquoise;
+     padding: 20px;
+     font-family: 'Montserrat', Georgia, sans-serif;
+    font-size: 20px;
+ }
+
+ form input, form select {
+     display: block;
+ }
+
+.lastN {
+    color: red;
+    font-weight: bold;
+}
