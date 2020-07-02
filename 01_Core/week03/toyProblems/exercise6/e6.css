@@ -1,0 +1,64 @@
+.container {
+    position: relative;
+    height: 500px;
+    width: 500px;
+    }
+
+    .interior.div1 {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        position: absolute;
+        left: 100px;
+    }
+
+    .interior.div2 {
+        width: 100px;
+        height: 100px;
+        background-color: orange;
+        position: relative;
+        left:49%;
+        transform: rotate(-13deg);
+        border: white;
+        border-style: solid;
+        border-width: 6px;
+    }
+
+    .interior.div3 {
+        width: 100px;
+        height: 100px;
+        background-color: yellow;
+        position: relative;
+        left:37%;
+        top: -5%;
+        transform: rotate(-22deg);
+        border: white;
+        border-style: solid;
+        border-width: 6px;
+    }
+
+    .interior.div4 {
+        width: 100px;
+        height: 100px;
+        background-color: blue;
+        position: relative;
+        left:20%;
+        top: -36%;
+        transform: rotate(35deg);
+        border: white;
+        border-style: solid;
+        border-width: 6px;
+    }
+
+    .interior.div5 {
+        width: 100px;
+        height: 100px;
+        background-color: fuchsia;
+        position: relative;
+        left:7%;
+        top: -60%;
+        transform: rotate(20deg);
+        border: white;
+        border-style: solid;
+        border-width: 6px;
+    }

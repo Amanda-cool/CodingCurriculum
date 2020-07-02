@@ -1,0 +1,74 @@
+.container {
+    position: relative;
+    height: 220px;
+    width: 220px;
+    }
+    
+    .interior.div1 {
+        width: 100px;
+        height:100px;
+        background-color: blue;
+        position: absolute;
+        bottom: 0;
+    }
+    
+    .interior.div2 {
+        width: 100px;
+        height:100px;
+        background-color: blue;
+        position: absolute;
+        top: 0;
+    }
+    
+    .interior.div3 {
+        width: 100px;
+        height:100px;
+        background-color: blue;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+    
+    
+    .interior.div4 {
+        width: 100px;
+        height:100px;
+        background-color: blue;
+        position: absolute;
+        right: 0;
+    }
+    
+    .interior.div5 {
+        width: 100px;
+        height:100px;
+        background-color: red;
+        position: absolute;
+        right: 50%;
+        margin-right: -50px;
+        top: 50%;
+        margin-top: -50px;
+        transform: rotate(45deg);
+        z-index: 1;
+    }
+
+    .div5::after {
+        background-color: white;
+        height: 45px;
+        width: 45px;
+        border-radius: 50%;
+        content: "★";
+        font-size: 22px;
+        transform: rotate(-45deg);
+        text-align: center;
+        line-height: 45px;/* this needs to be equal to the height of the div in order for it to auto center.*/
+        z-index: 2;
+        position: absolute;
+        right: 50%;
+        margin-right: -22.5px;
+        top: 50%;
+        margin-top: -22.5px;   
+    }
+
+    
+    
+    
