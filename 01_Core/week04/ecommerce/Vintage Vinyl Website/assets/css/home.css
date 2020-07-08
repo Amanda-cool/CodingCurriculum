@@ -33,7 +33,7 @@ header nav ul li {
     color: white;
 }
 
-header nav ul li#record a {
+#record a {
     display: block;
     width: 130px;
     height: 130px;
@@ -47,6 +47,7 @@ header nav ul li#record a {
 
 a {
     text-decoration: none;
+    color: white;
 }
 
 a:active {
@@ -81,6 +82,8 @@ h2 {
     text-shadow: 4px 4px black;
 }
 
+
+
 img {
     width: 100%;
     max-height: 600px;
@@ -88,5 +91,8 @@ img {
 
 .featured {
     text-align: center;
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
 }
 
