@@ -1,4 +1,3 @@
-// This is copy and pasted will need grouping functionality
 
 
 var myIndex = 0;
@@ -13,5 +12,5 @@ function carousel() {
   myIndex++;
   if (myIndex > x.length) {myIndex = 1}    
   x[myIndex-1].style.display = "block";  
-  setTimeout(carousel, 1000); // Change image every 2 seconds
+  setTimeout(carousel, 2000); // Change image every 2 seconds
 }

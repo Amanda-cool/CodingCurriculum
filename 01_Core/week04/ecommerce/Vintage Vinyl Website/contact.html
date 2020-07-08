@@ -8,15 +8,18 @@
 </head>
 <body>
     <header class="navigation">
+        <nav>
         <ul>
-            <li>About Us</li>
-            <li>Genres</li>
-            <li>Record Players</li>
-            <li>Support Local</li>
-            <li>Contact Us</li>
-        </ul>
-    </header>
+            <li><a href="about_us.html">About Us</a></li>
+            <li><a href="genres.html">Genres</a></li>
 
+            <li id="record"><a href="index.html" title="Vinyl Resting Place">VRP</a></li>
+
+            <li><a href="local.html">Local</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+        </nav>
+    </header>
     <!--Standard contact form asking for name, email, phone, preferred contact method (radio button, phone/email), How did you hear about us? (checkboxes: conference, TV, Radio, Word of Mouth, other) and comments.-->
 
     <fieldset>
@@ -31,6 +34,30 @@
                 <label for="contact_email">Email</label>
                 <input type="email" id="contact_email">
 
+                <label for="gender">Preferred Contact Method:</label><br>
+
+                <input type="radio" id="phone" name="contact_method" value="phone">
+                <label for="male">Phone</label><br>
+
+                <input type="radio" id="email" name="contact_method" value="email">
+                <label for="female">Email</label><br>
+
+                <form action="/action_page.php">
+                    <input type="checkbox" id="tv" name="tv" value="TV">
+                    <label for="option1"> TV</label><br>
+                    <input type="checkbox" id="radio" name="radio" value="Radio">
+                    <label for="option2"> Radio</label><br>
+                    <input type="checkbox" id="friend" name="friend" value="Friend">
+                    <label for="option3"> Friend</label><br>
+                    <input type="checkbox" id="conference" name="conference" value="Conference">
+                    <label for="option4"> Conference</label><br><br>
+                    
+                </form>
+                <label for="comments">Comments:</label>
+                <textarea id="comments" name="comments" rows="7" cols="50">Please let us know if you have any questions or comments and we will do our best to reach out to you within 2-3 business days.
+                </textarea>
+                <input type="submit" value="Submit">
+                  
     </fieldset>
 </body>
 </html>
