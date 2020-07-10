@@ -4,60 +4,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
+    <link rel="stylesheet" href="assets/css/home.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="navigation">
-        <nav>
-        <ul>
-            <li><a href="about_us.html">About Us</a></li>
-            <li><a href="genres.html">Genres</a></li>
+        <nav class="align-nav">
+        <ul class="nav-content">
+            <li class="nav-indiv"><a href="about_us.html">About Us</a></li>
+            <li class="nav-indiv"><a href="genres.html">Genres</a></li>
 
-            <li id="record"><a href="index.html" title="Vinyl Resting Place">VRP</a></li>
+            <li class="nav-indiv" id="record"><a href="index.html">VRP</a></li>
 
-            <li><a href="local.html">Local</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
+            <li class="nav-indiv"><a href="local.html">Local</a></li>
+            <li class="nav-indiv"><a href="contact.html">Contact Us</a></li>
         </ul>
         </nav>
     </header>
     <!--Standard contact form asking for name, email, phone, preferred contact method (radio button, phone/email), How did you hear about us? (checkboxes: conference, TV, Radio, Word of Mouth, other) and comments.-->
-
+    <form class="container_contact">
     <fieldset>
-        <legend>Contact Us!</legend>
+                <legend>Contact Us!</legend>
 
+                <div class="preference">
                 <label for="contact_first_name">First Name</label>
-                <input type="text" id="contact_name">
+                <input type="text" id="contact_name" required>
+                </div>
 
+                <div class="preference">
                 <label for="contact_last_name">Last Name</label>
-                <input type="text" id="contact_name">
+                <input type="text" id="contact_name" required>
+                </div>
+
+                <label for="contact" class="preference">Preferred Contact Method:</label>
+                <div class="preference">
+                <input type="radio" id="phone" name="contact_method" value="phone">
+                <label for="phone" class="preferred">Phone</label>
+                </div>
+
+                <div class="preference">
+                <input type="radio" id="email" name="contact_method" value="email">
+                <label for="female" class="preferred">Email</label>
+                </div>
+                <label for="contact_phone">Phone</label>
+                <input type="tel" id="contact_phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="877-555-4321" required>
 
                 <label for="contact_email">Email</label>
-                <input type="email" id="contact_email">
+                <input type="email" id="contact_email" required>
 
-                <label for="gender">Preferred Contact Method:</label><br>
-
-                <input type="radio" id="phone" name="contact_method" value="phone">
-                <label for="male">Phone</label><br>
-
-                <input type="radio" id="email" name="contact_method" value="email">
-                <label for="female">Email</label><br>
-
-                <form action="/action_page.php">
-                    <input type="checkbox" id="tv" name="tv" value="TV">
-                    <label for="option1"> TV</label><br>
-                    <input type="checkbox" id="radio" name="radio" value="Radio">
-                    <label for="option2"> Radio</label><br>
-                    <input type="checkbox" id="friend" name="friend" value="Friend">
-                    <label for="option3"> Friend</label><br>
-                    <input type="checkbox" id="conference" name="conference" value="Conference">
-                    <label for="option4"> Conference</label><br><br>
+                    <p> How did you hear about us?</p>
+                    <input type="checkbox" id="tv" name="tv" value="TV" class="radio_ref">
+                    <label for="option1"> TV</label>
+                    <input type="checkbox" id="radio" name="radio" value="Radio" class="radio_ref">
+                    <label for="option2"> Radio</label>
+                    <input type="checkbox" id="friend" name="friend" value="Friend" class="radio_ref">
+                    <label for="option3"> Friend</label>
+                    <input type="checkbox" id="conference" name="conference" value="Conference" class="radio_ref">
+                    <label for="option4"> Conference</label><br><br>    
                     
-                </form>
-                <label for="comments">Comments:</label>
-                <textarea id="comments" name="comments" rows="7" cols="50">Please let us know if you have any questions or comments and we will do our best to reach out to you within 2-3 business days.
-                </textarea>
+                
+                <label for="comments" class="preference">Comments:</label>
+
+                <textarea id="comments" name="comments" rows="7" cols="50" placeholder="Please leave any questions or comments and we will get back to you ASAP."></textarea>
                 <input type="submit" value="Submit">
-                  
+        </form>
     </fieldset>
+
 </body>
 </html>

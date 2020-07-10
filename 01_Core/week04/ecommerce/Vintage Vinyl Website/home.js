@@ -1,4 +1,4 @@
-
+//Slideshow Carousel Main Page
 
 var myIndex = 0;
 carousel();
@@ -13,4 +13,16 @@ function carousel() {
   if (myIndex > x.length) {myIndex = 1}    
   x[myIndex-1].style.display = "block";  
   setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+
+
+//Mobile nav bar function
+
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
 }

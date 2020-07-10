@@ -3,35 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vintage Vinyl</title>
+    <title>Vinyl Resting Place</title>
     <link rel="stylesheet" href="assets/css/home.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
 </head>
 <body>
-    <header class="navigation">
-        <nav>
-        <ul>
-            <li><a href="about_us.html">About Us</a></li>
-            <li><a href="genres.html">Genres</a></li>
+    <header class="default_nav">
+        <nav class="desktop_nav">
+        <ul class="nav-content">
+            <li class="nav-indiv"><a href="about_us.html">About Us</a></li>
+            <li class="nav-indiv"><a href="genres.html">Genres</a></li>
 
-            <li id="record"><a href="index.html">VRP</a></li>
+            <li class="nav-indiv" id="record"><a href="index.html">VRP</a></li>
 
-            <li><a href="local.html">Local</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
+            <li class="nav-indiv"><a href="local.html">Local</a></li>
+            <li class="nav-indiv"><a href="contact.html">Contact Us</a></li>
         </ul>
         </nav>
     </header>
+
+
+<nav class="mobile_nav">
+        <ul class="nav-content"></ul>
+            <a href="#home" class="active">VRP Home</a>
+        <div id="myLinks">
+            <li class="nav-indiv"><a href="about_us.html">About Us</a></li>
+            <li class="nav-indiv"><a href="genres.html">Genres</a></li>
+            <li class="nav-indiv"><a href="local.html">Local</a></li>
+            <li class="nav-indiv"><a href="contact.html">Contact Us</a></li>
+        </ul>
+        </div><!-- end link container-->
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+        </a>
+</nav>
+
+
+
+
+
     <div class="container">
 
         <section class="image_pun">
-            <img src="assets/images/concert_heart.jpeg" alt="concert">
+            <img src="assets/images/concert_heart.jpeg" alt="concert" class="concert">
             <h2>The vinyl resting place.</h2>
         </section>
 
 
 
-        <div class="featured">
+        <div class="featured"><!--add 2 columns define border and add specs and content-->
             <h1>Featured Items:</h1>
             <img class="mySlides" src="assets/images/jeff_rosenstock.jpg">
             <img class="mySlides" src="assets/images/broken_social_scene.jpg">
@@ -43,8 +66,20 @@
 
     </div><!--end container-->
 
-    <footer class="main">
+    <footer>
         <p>&copy; Amanda Davis 2020</p>
+
+            <a href="https://www.facebook.com">
+                <i id="facebook" class="fa fa-facebook" style="font-size: 20px;"></i>
+            </a>
+
+            <a href="https://www.instagram.com">
+                <i id="instagram" class="fa fa-instagram" style="font-size: 20px;"></i>
+            </a>
+
+            <a href="https://www.google.com">
+                <i id="google" class="fa fa-google" style="font-size: 20px;"></i>
+            </a>
     </footer>
     <script src="home.js"></script>
 
