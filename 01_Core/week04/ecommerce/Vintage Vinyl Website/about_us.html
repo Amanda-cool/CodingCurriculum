@@ -5,26 +5,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us</title>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
+        <link rel="stylesheet" href="assets/css/home.css">
 </head>
 <body>
-    <header class="navigation">
-        <ul>
-            <li>About Us</li>
-            <li>Genres</li>
-            <li>Record Players</li>
-            <li>Support Local</li>
-            <li>Contact Us</li>
+    <header class="default_nav">
+        <nav class="desktop_nav">
+        <ul class="nav-content">
+            <li class="nav-indiv"><a href="about_us.html">About Us</a></li>
+            <li class="nav-indiv"><a href="genres.html">Genres</a></li>
+
+            <li class="nav-indiv" id="record"><a href="index.html">VRP</a></li>
+
+            <li class="nav-indiv"><a href="local.html">Local</a></li>
+            <li class="nav-indiv"><a href="contact.html">Contact Us</a></li>
         </ul>
+        </nav>
     </header>
 
-    <div class="container">
+
+<nav class="mobile_nav">
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+        </a>
+        <ul class="nav-content"></ul>
+            <a href="index.html" class="active">VRP Home</a>
+        <div id="myLinks">
+            <li class="nav-indiv"><a href="about_us.html">About Us</a></li>
+            <li class="nav-indiv"><a href="genres.html">Genres</a></li>
+            <li class="nav-indiv"><a href="local.html">Local</a></li>
+            <li class="nav-indiv"><a href="contact.html">Contact Us</a></li>
+        </ul>
+        </div><!-- end link container-->
+
+</nav>
+
+
+    <div class="about_us_container">
         <section class="opener">
             <h1>Where the music comes full circle</h1>
             <p class="opener_pg">
-                We want to see the world find their catalyst for music again and we want to do that by bringing back the old feel. Something feels different about setting a record rather than hitting a song on bluetooth. We want people to explore the variety of genres that may be unknown. If you find one new thing that you love then we have done what we came for.
+                We want to see the world find their catalyst for music again and we want to do that by bringing back the old feel. Something feels different about setting a record rather than hitting a song on bluetooth. We want people to explore the variety of genres that may be unknown. If you find one new thing that you love then we have done what we came for. Cloud bread live-edge listicle sriracha food truck. Af retro cronut next level skateboard cloud bread normcore taxidermy health goth gochujang VHS echo park. Thundercats slow-carb flexitarian raclette farm-to-table literally chillwave helvetica. Everyday carry messenger bag humblebrag kale chips dreamcatcher.
+
+                Street art distillery kogi green juice, PBR&B lo-fi wolf taxidermy. You probably haven't heard of them paleo 8-bit pok pok, literally swag normcore art party craft beer twee kombucha. Art party locavore try-hard food truck readymade venmo. Snackwave banjo heirloom kombucha succulents neutra pour-over meggings jianbing listicle tote bag. Knausgaard copper mug 90's keffiyeh deep v. Mlkshk crucifix cloud bread venmo, etsy fixie migas viral keffiyeh franzen bespoke schlitz art party shoreditch.
             </p>
+        </section>    
+    </div>
+
+    <div class="record_player">
+        <section class="player">
+           <img src="assets/images/vinyl-record-player-png.png" alt="record_player" class="player_image">
         </section>
     </div>
 
+
+
+    <script src="home.js"></script>
 </body>
 </html>

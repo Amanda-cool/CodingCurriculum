@@ -5,11 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Genres</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
     <link href="assets/css/home.css" rel="stylesheet"> 
 </head>
 <body>
-    <header class="desktop_nav">
-        <nav class="align-nav">
+    <header class="default_nav">
+        <nav class="desktop_nav">
         <ul class="nav-content">
             <li class="nav-indiv"><a href="about_us.html">About Us</a></li>
             <li class="nav-indiv"><a href="genres.html">Genres</a></li>
@@ -21,5 +25,59 @@
         </ul>
         </nav>
     </header>
+
+
+<nav class="mobile_nav">
+        <ul class="nav-content"></ul>
+            <a href="index.html" class="active">VRP Home</a>
+        <div id="myLinks">
+            <li class="nav-indiv"><a href="about_us.html">About Us</a></li>
+            <li class="nav-indiv"><a href="genres.html">Genres</a></li>
+            <li class="nav-indiv"><a href="local.html">Local</a></li>
+            <li class="nav-indiv"><a href="contact.html">Contact Us</a></li>
+        </ul>
+        </div><!-- end link container-->
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+        </a>
+</nav>
+
+
+    <div class="search-container">
+    <form action="/action_page.php">
+      <input type="text" placeholder="Search.." name="search">
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+
+    <div class="dropdown-filter">
+        <label for="price">Filter by Price</label>
+        <select name="price" id="price">
+          <option value="Highest">Highest</option>
+          <option value="Lowest">Lowest</option>
+        </select>
+    </div>
+
+    <div class="dropdown-filter">
+        <label for="genres">Filter by Genre:</label>
+        <select name="genre" id="genre">
+          <option value="Indie">Indie</option>
+          <option value="Emo_Punk">Emo/Punk</option>
+          <option value="Alternative">Alternative</option>
+        </select>
+    </div>
+    </div><!--end search container-->
+
+    <div class="record-container">
+        <img src="assets/images/florence.jpg" alt="florence" class="record_ind">
+        <img src="assets/images/joyce_manor.jpg" alt="joyce_manor" class="record_ind">
+        <img src="assets/images/wolf_parade.jpg" alt="wolf_parade" class="record_ind">
+        <img src="assets/images/king_gizzard.jpg" alt="king_gizzard" class="record_ind">
+        <img src="assets/images/julien_baker.jpg" alt="julien_baker" class="record_ind">
+        <img src="assets/images/broken_social_scene.jpg" alt="broken_social_scene" class="record_ind">
+        <img src="assets/images/blonde_redhead.jpg" alt="blonde_redhead" class="record_ind">
+        <img src="assets/images/jeff_rosenstock.jpg" alt="jeff_rosenstock" class="record_ind">
+        
+    </div>
+    <script src="home.js"></script>
 </body>
 </html>

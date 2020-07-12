@@ -15,7 +15,7 @@ body {
     margin: 0 auto;
 }
 
-.align-nav { /* add classes to consolidate reference BEM*/
+.default_nav { 
     text-align: center;
 }
 
@@ -49,6 +49,10 @@ body {
     display: none;
 }
 
+#myLinks {
+    display: none;
+}
+
 
 a {
     text-decoration: none;
@@ -60,7 +64,7 @@ footer {
     text-align: center;
     line-height: 10px;
     letter-spacing: 5px;
-    margin: 100px 0 0 0;
+    margin: 700px 0 0 0;
 }
 
 
@@ -70,33 +74,40 @@ footer {
     position: relative;
 }
 
-h2 {
-    position: absolute;
-    text-align: right ;
-    top: 50px;
-    left: 400px;
-    font-size: 60px;
-    font-weight: bolder;
-    text-shadow: 4px 4px black;
-}
 
 .concert { 
+    margin-top: 2%;
     width: 100%;
     max-height: 600px;
+
 }
 
 .featured {
     text-align: center;
     width: 400px;
-    margin: 0 auto;
+    float: left;
+    padding-left: 20%;
 }
+.specials {
+    float: right;
+    width: 400px;
+    height: 400px;
+    padding: 10px;
+    border: goldenrod solid 3px;
+    margin-top: 3%;
+    margin-right: 20%;
+    text-align: center;
+
+}
+
 /* Contact Page */
 
 .container_contact {
     text-align: center;
     width: 800px;
     position: absolute;
-    left:22%;
+    left:26%;
+    margin-top: 5%;
 }
 
 .preference {
@@ -109,6 +120,58 @@ textarea {
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+/* Genres Product Page */
+
+.search-container {
+    display: flex;
+    align-content: center;
+    padding:10px;
+    margin-top: 7%;
+    margin-right: 16px;
+    background: goldenrod;
+    font-size: 15px;
+    cursor: pointer;
+}
+.dropdown-filter {
+    padding: 8px;
+}
+
+.record-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 5%;
+
+}
+
+.record_ind {
+    width: 220px;
+    height: 220px;
+    padding: 20px;
+    justify-content: flex-start;
+}
+
+
+/* About Us Page */
+
+.about_us_container {
+    float: left;
+    margin-top: 5%;
+    margin-left: 15%;
+    width: 500px;
+}
+
+.record_player {
+    float: right;
+    margin-top: 10%;
+    margin-right: 25%;
+}
+
+
+.player_image {
+    width: 400px;
+    height: 400px;
 }
 
 
@@ -145,8 +208,8 @@ textarea {
         background: black;
         display: block;
         position: relative;
-        right: 0;
-        top: 0;
+        right: 30px;
+        top: 30px;  
       }
 
       .nav-content a:hover {
@@ -157,7 +220,8 @@ textarea {
       .active {
         background-color: gold;
         color: black;
-
       }
+
+
 
 }
