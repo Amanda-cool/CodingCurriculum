@@ -104,10 +104,15 @@ footer {
 
 .container_contact {
     text-align: center;
-    width: 800px;
-    position: absolute;
-    left:26%;
-    margin-top: 5%;
+    width: 600px;
+    float: left;
+    margin-left:5%;
+    margin-top: 4%;
+}
+
+.contact_image {
+    float: right;
+    margin-top: 20%;
 }
 
 .preference {
@@ -211,6 +216,7 @@ textarea {
         right: 30px;
         top: 30px;  
       }
+
 
       .nav-content a:hover {
         background-color: #ddd;
