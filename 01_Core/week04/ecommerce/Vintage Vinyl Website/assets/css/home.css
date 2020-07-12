@@ -61,10 +61,11 @@ a {
 
 
 footer {
+    clear: both;
     text-align: center;
     line-height: 10px;
     letter-spacing: 5px;
-    margin: 700px 0 0 0;
+    padding: 100px 0 0 0;
 }
 
 
@@ -104,7 +105,7 @@ footer {
 
 .container_contact {
     text-align: center;
-    width: 600px;
+    max-width: 600px;
     float: left;
     margin-left:5%;
     margin-top: 4%;
@@ -132,7 +133,7 @@ textarea {
 .search-container {
     display: flex;
     align-content: center;
-    padding:10px;
+    padding:3px;
     margin-top: 7%;
     margin-right: 16px;
     background: goldenrod;
@@ -150,6 +151,10 @@ textarea {
 
 }
 
+.search_bar {
+    margin-top: 7px;
+}
+
 .record_ind {
     width: 220px;
     height: 220px;
@@ -157,6 +162,14 @@ textarea {
     justify-content: flex-start;
 }
 
+.record_pad {
+    display: block;
+    padding: 0 20px;
+}
+
+.record-container p {
+    text-align: center;
+}
 
 /* About Us Page */
 
@@ -228,6 +241,37 @@ textarea {
         color: black;
       }
 
+
+      .featured {
+        text-align: center;
+        width: 400px;
+        float: none;
+        padding-left: 7px;
+        margin: 0 auto;
+    }
+    .specials {
+        float: none;
+        width: 400px;
+        height: 400px;
+        padding: 10px;
+        border: goldenrod solid 3px;
+        margin: 0 auto;
+        text-align: center;
+        margin-top: 2%;
+    
+    }
+    /* mobile contact us page */
+    .heart_image {
+        float: none;
+        width: 600px;
+
+    }
+    
+
+    .contact_image {
+        float: right;
+        margin-top: 5%;
+    }
 
 
 }

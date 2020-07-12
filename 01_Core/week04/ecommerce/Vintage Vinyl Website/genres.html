@@ -28,6 +28,9 @@
 
 
 <nav class="mobile_nav">
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+        </a>
         <ul class="nav-content"></ul>
             <a href="index.html" class="active">VRP Home</a>
         <div id="myLinks">
@@ -37,14 +40,12 @@
             <li class="nav-indiv"><a href="contact.html">Contact Us</a></li>
         </ul>
         </div><!-- end link container-->
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-        <i class="fa fa-bars"></i>
-        </a>
+
 </nav>
 
 
     <div class="search-container">
-    <form action="/action_page.php">
+    <form action="/action_page.php" class="search_bar">
       <input type="text" placeholder="Search.." name="search">
       <button type="submit"><i class="fa fa-search"></i></button>
     </form>
@@ -68,7 +69,7 @@
     </div><!--end search container-->
 
     <div class="record-container">
-        <img src="assets/images/florence.jpg" alt="florence" class="record_ind">
+        <a href="index.html"><img src="assets/images/florence.jpg" alt="florence" class="record_ind"><p class="record_pad"> Florence and the Machine</p><p>$19.99</p></a>
         <img src="assets/images/joyce_manor.jpg" alt="joyce_manor" class="record_ind">
         <img src="assets/images/wolf_parade.jpg" alt="wolf_parade" class="record_ind">
         <img src="assets/images/king_gizzard.jpg" alt="king_gizzard" class="record_ind">
