@@ -70,12 +70,14 @@
                 <input type="radio" id="email" name="contact_method" value="email">
                 <label for="female" class="preferred">Email</label>
             </div>
-            <label for="contact_phone">Phone</label>
-            <input type="tel" id="contact_phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="877-555-4321"
-                required>
+            <div class="phone_number"><label for="contact_phone">Phone</label>
+                <input type="tel" id="contact_phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="877-555-4321"
+                    required>
+            </div>
 
-            <label for="contact_email">Email</label>
-            <input type="email" id="contact_email" required>
+            <div class="email_address"><label for="contact_email">Email</label>
+                <input type="email" id="contact_email" required>
+            </div>
 
             <p> How did you hear about us?</p>
             <input type="checkbox" id="tv" name="tv" value="TV" class="radio_ref">
