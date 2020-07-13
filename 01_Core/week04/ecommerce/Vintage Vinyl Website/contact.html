@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,89 +8,92 @@
     <link rel="stylesheet" href="assets/css/home.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+
 <body>
     <header class="default_nav">
         <nav class="desktop_nav">
-        <ul class="nav-content">
-            <li class="nav-indiv"><a href="about_us.html">About Us</a></li>
-            <li class="nav-indiv"><a href="genres.html">Genres</a></li>
+            <ul class="nav-content">
+                <li class="nav-indiv"><a href="about_us.html">About Us</a></li>
+                <li class="nav-indiv"><a href="genres.html">Genres</a></li>
 
-            <li class="nav-indiv" id="record"><a href="index.html">VRP</a></li>
+                <li class="nav-indiv" id="record"><a href="index.html">VRP</a></li>
 
-            <li class="nav-indiv"><a href="local.html">Local</a></li>
-            <li class="nav-indiv"><a href="contact.html">Contact Us</a></li>
-        </ul>
+                <li class="nav-indiv"><a href="local.html">Local</a></li>
+                <li class="nav-indiv"><a href="contact.html">Contact Us</a></li>
+            </ul>
         </nav>
     </header>
 
 
-<nav class="mobile_nav">
-    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-        <i class="fa fa-bars"></i>
+    <nav class="mobile_nav">
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
         </a>
         <ul class="nav-content"></ul>
-            <a href="index.html" class="active">VRP Home</a>
+        <a href="index.html" class="active">VRP Home</a>
         <div id="myLinks">
             <li class="nav-indiv"><a href="about_us.html">About Us</a></li>
             <li class="nav-indiv"><a href="genres.html">Genres</a></li>
             <li class="nav-indiv"><a href="local.html">Local</a></li>
             <li class="nav-indiv"><a href="contact.html">Contact Us</a></li>
-        </ul>
+            </ul>
         </div><!-- end link container-->
 
-</nav>
+    </nav>
 
 
 
     <!--Standard contact form asking for name, email, phone, preferred contact method (radio button, phone/email), How did you hear about us? (checkboxes: conference, TV, Radio, Word of Mouth, other) and comments.-->
     <form class="container_contact">
-    <fieldset>
-                <legend>Contact Us!</legend>
+        <fieldset>
+            <legend>Contact Us!</legend>
 
-                <div class="preference">
+            <div class="preference">
                 <label for="contact_first_name">First Name</label>
                 <input type="text" id="contact_name" required>
-                </div>
+            </div>
 
-                <div class="preference">
+            <div class="preference">
                 <label for="contact_last_name">Last Name</label>
                 <input type="text" id="contact_name" required>
-                </div>
+            </div>
 
-                <label for="contact" class="preference">Preferred Contact Method:</label>
-                <div class="preference">
+            <label for="contact" class="preference">Preferred Contact Method:</label>
+            <div class="preference">
                 <input type="radio" id="phone" name="contact_method" value="phone">
                 <label for="phone" class="preferred">Phone</label>
-                </div>
+            </div>
 
-                <div class="preference">
+            <div class="preference">
                 <input type="radio" id="email" name="contact_method" value="email">
                 <label for="female" class="preferred">Email</label>
-                </div>
-                <label for="contact_phone">Phone</label>
-                <input type="tel" id="contact_phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="877-555-4321" required>
+            </div>
+            <label for="contact_phone">Phone</label>
+            <input type="tel" id="contact_phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="877-555-4321"
+                required>
 
-                <label for="contact_email">Email</label>
-                <input type="email" id="contact_email" required>
+            <label for="contact_email">Email</label>
+            <input type="email" id="contact_email" required>
 
-                    <p> How did you hear about us?</p>
-                    <input type="checkbox" id="tv" name="tv" value="TV" class="radio_ref">
-                    <label for="option1"> TV</label>
-                    <input type="checkbox" id="radio" name="radio" value="Radio" class="radio_ref">
-                    <label for="option2"> Radio</label>
-                    <input type="checkbox" id="friend" name="friend" value="Friend" class="radio_ref">
-                    <label for="option3"> Friend</label>
-                    <input type="checkbox" id="conference" name="conference" value="Conference" class="radio_ref">
-                    <label for="option4"> Conference</label><br><br>    
-                    
-                
-                <label for="comments" class="preference">Comments:</label>
+            <p> How did you hear about us?</p>
+            <input type="checkbox" id="tv" name="tv" value="TV" class="radio_ref">
+            <label for="option1"> TV</label>
+            <input type="checkbox" id="radio" name="radio" value="Radio" class="radio_ref">
+            <label for="option2"> Radio</label>
+            <input type="checkbox" id="friend" name="friend" value="Friend" class="radio_ref">
+            <label for="option3"> Friend</label>
+            <input type="checkbox" id="conference" name="conference" value="Conference" class="radio_ref">
+            <label for="option4"> Conference</label><br><br>
 
-                <textarea id="comments" name="comments" rows="7" cols="50" placeholder="Please leave any questions or comments and we will get back to you ASAP."></textarea>
-                <input type="submit" value="Submit">
-        </form>
+
+            <label for="comments" class="preference">Comments:</label>
+
+            <textarea id="comments" name="comments" rows="7" cols="50"
+                placeholder="Please leave any questions or comments and we will get back to you ASAP."></textarea>
+            <input type="submit" value="Submit">
+    </form>
     </fieldset>
     <div class="contact_image">
         <img src="assets/images/heart_band.png" alt="heart_band" class="heart_image">
@@ -97,4 +101,5 @@
 
     <script src="home.js"></script>
 </body>
+
 </html>

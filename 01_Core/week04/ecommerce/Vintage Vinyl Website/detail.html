@@ -1,11 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vinyl Details</title>
+    <link rel="stylesheet" href="assets/css/home.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+
 <body>
-    
+
+    <div class="product_details">
+        <img src="assets/images/broken_social_scene.jpg" alt="broken" class="img_bss">
+
+        <div class="description">
+            <p>Broken Social Scene - Feel Good Lost - (Gatefold LP Jacket, Remastered) (Vinyl)</p>
+            <p>$25.98</p>
+
+
+        <form>
+            <div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value">-</div>
+            <input type="number" id="number" value="0" />
+            <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value">+</div>
+        </form>
+    </div>
+
+    </div>
+    <script src="home.js"></script>
 </body>
+
 </html>
