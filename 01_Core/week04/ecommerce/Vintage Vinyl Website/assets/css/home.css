@@ -296,86 +296,61 @@ form {
     .desktop_nav {
         display: none;
     }
-
     .mobile_nav {
+        padding: 10px 0; 
         display: block;
     }
-
+    .default_nav {
+        text-align: left; 
+    }
+    .mobile_nav-visible { 
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
     .nav-content {
         display:none;
-      }
-
+    }
+    /*ul & containing div*/
     .nav-content #myLinks {
         display: none;
-    }  
-
+    }
+    /*li*/
     .nav-indiv {
-        display:block;
+        display: block;
         padding: 14px;
     }
-
+    /*links within li*/
     .nav-content a {
         color: white;
         text-decoration: none;
         font-size: 17px;
         display: block;
-      }
+    }
+    /*a containing hamburger*/
     .icon {
         background: black;
         display: inline-block;
-        position: relative;
-
-      }
-
-      .fa-bars {
-        font-size: 40px;  
-      }
-
-
-      .nav-content a:hover {
+        padding-right: 10px; 
+    }
+    /*hamburger*/
+    .fa-bars {
+        font-size: 40px;
+    }
+    /*nav items*/
+    .nav-content a:hover {
         background-color: #ddd;
         color: black;
-      }
-
-      .active {
+    }
+    /*home logo*/
+    .active {
         background-color: gold;
         color: black;
-      }
+        font-size: 20px; 
+    }
+    .concert {
+        margin-top: 0; 
+    }
 
-
-      .featured {
-        text-align: center;
-        width: 400px;
-        float: none;
-        padding-left: 7px;
-        margin: 0 auto;
-    }
-    .specials {
-        float: none;
-        width: 400px;
-        height: 400px;
-        padding: 10px;
-        border: goldenrod solid 3px;
-        margin: 0 auto;
-        text-align: center;
-        margin-top: 2%;
-    
-    }
-    /* mobile contact us page */
-    .heart_image {
-        float: none;
-        width: 600px;
-
-    }
-    
-    .contact_image {
-        float: right;
-        margin-top: 5%;
-    }
-    /* WTF DO I DO IT NO WORK
-    .product_details {
-        width: 400px;
-        text-align: right;
-    }
-    */
 }
