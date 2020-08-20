@@ -5,51 +5,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vinyl Resting Place</title>
-    <link rel="stylesheet" href="assets/css/home.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/home.css">
 </head>
 
 <body>
-    <header class="default_nav">
-        <nav class="desktop_nav">
-            <ul class="nav-content">
-                <li class="nav-indiv"><a href="about_us.html">About Us</a></li>
-                <li class="nav-indiv"><a href="genres.html">Genres</a></li>
-
-                <li class="nav-indiv" id="record"><a href="index.html">VRP</a></li>
-
-                <li class="nav-indiv"><a href="local.html">Local</a></li>
-                <li class="nav-indiv"><a href="contact.html">Contact Us</a></li>
-            </ul>
-        </nav>
-    </header>
-
-
-    <nav class="mobile_nav">
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
-        </a>
-        <ul class="nav-content"></ul>
-        <a href="index.html" class="active">VRP Home</a>
-        <div id="myLinks">
-            <li class="nav-indiv"><a href="about_us.html">About Us</a></li>
-            <li class="nav-indiv"><a href="genres.html">Genres</a></li>
-            <li class="nav-indiv"><a href="local.html">Local</a></li>
-            <li class="nav-indiv"><a href="contact.html">Contact Us</a></li>
-            </ul>
-        </div><!-- end link container-->
-
-    </nav>
 
 
 
 
 
     <div class="container">
-
+        <header class="default_nav">
+            <nav class="desktop_nav">
+                <ul class="nav-content">
+                    <li class="nav-indiv"><a href="about_us.html">About Us</a></li>
+                    <li class="nav-indiv"><a href="genres.html">Genres</a></li>
+    
+                    <li class="nav-indiv" id="record"><a href="index.html">VRP</a></li>
+    
+                    <li class="nav-indiv"><a href="local.html">Local</a></li>
+                    <li class="nav-indiv"><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </header>
+    
+    
+        <nav class="mobile_nav">
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+            <a href="index.html" class="active">VRP Home</a>
+            
+            <div id="myLinks">
+                <ul class="nav-content"></ul>
+                <li class="nav-indiv"><a href="about_us.html">About Us</a></li>
+                <li class="nav-indiv"><a href="genres.html">Genres</a></li>
+                <li class="nav-indiv"><a href="local.html">Local</a></li>
+                <li class="nav-indiv"><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+    
+        </nav>
+    
+        <main class="main clearfix">
         <section class="image_pun">
             <img src="assets/images/concert_heart.jpeg" alt="concert" class="concert">
         </section>
@@ -57,17 +59,17 @@
 
 
         <div class="featured">
-            <h1>Featured Artist:</h1>
-            <img class="mySlides" src="assets/images/jeff_rosenstock.jpg">
-            <img class="mySlides" src="assets/images/broken_social_scene.jpg">
-            <img class="mySlides" src="assets/images/blonde_redhead.jpg">
-            <img class="mySlides" src="assets/images/neutral_milk_hotel.jpg">
-            <img class="mySlides" src="assets/images/ugly_casanova.jpg">
+            <h2>Featured Artist:</h2>
+            <img class="mySlides" alt="Jeff Rosenstock" src="assets/images/jeff_rosenstock.jpg">
+            <img class="mySlides" alt="Broken Social Scene" src="assets/images/broken_social_scene.jpg">
+            <img class="mySlides" alt="Blonde Redhead" src="assets/images/blonde_redhead.jpg">
+            <img class="mySlides" alt="Neutral Milk Hotel" src="assets/images/neutral_milk_hotel.jpg">
+            <img class="mySlides" alt="Ugly Casanova" src="assets/images/ugly_casanova.jpg">
 
         </div>
 
         <div class="specials">
-            <h1>Current Specials:</h1>
+            <h2>Current Specials:</h2>
             <p>Umami microdosing narwhal, 3 wolf moon street art schlitz shoreditch. Snackwave tumblr drinking vinegar
                 aesthetic viral. Selvage bitters brunch viral snackwave. Mixtape chambray cloud bread humblebrag
                 adaptogen gochujang godard lumbersexual mustache. Wayfarers viral tousled ennui enamel pin hell of.</p>
@@ -78,27 +80,29 @@
                 craft beer meggings kickstarter. Whatever palo santo lumbersexual forage cardigan edison bulb, man braid
                 meditation.</p>
 
+    
         </div>
-
+        </main>
+        <footer>
+            <p>&copy; Amanda Davis 2020</p>
+    
+            <a href="https://www.facebook.com">
+                <i id="facebook" class="fa fa-facebook" style="font-size: 20px;" aria-label="Facebook"></i>
+            </a>
+    
+            <a href="https://www.instagram.com">
+                <i id="instagram" class="fa fa-instagram" style="font-size: 20px;" aria-label="Instagram"></i>
+            </a>
+    
+            <a href="https://www.google.com">
+                <i id="google" class="fa fa-google" style="font-size: 20px;" aria-label = "Google"></i>
+            </a>
+        </footer>
 
     </div>
     <!--end container-->
 
-    <footer>
-        <p>&copy; Amanda Davis 2020</p>
 
-        <a href="https://www.facebook.com">
-            <i id="facebook" class="fa fa-facebook" style="font-size: 20px;"></i>
-        </a>
-
-        <a href="https://www.instagram.com">
-            <i id="instagram" class="fa fa-instagram" style="font-size: 20px;"></i>
-        </a>
-
-        <a href="https://www.google.com">
-            <i id="google" class="fa fa-google" style="font-size: 20px;"></i>
-        </a>
-    </footer>
     <script src="home.js"></script>
 </body>
 

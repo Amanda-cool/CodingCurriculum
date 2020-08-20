@@ -7,7 +7,17 @@ body {
     background-color: black;
     color: white;
 }
-
+.container {
+    max-width: 1600px;
+    margin: 0 auto;
+    position: relative;
+    min-height: 100vh;
+    box-sizing: border-box;
+    padding-bottom: 202px;
+}
+.desktop_nav {
+    padding-top: 20px;
+}
 .mySlides {
     display:none;
     width: 400px;
@@ -45,6 +55,12 @@ body {
 
 }
 
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
 .mobile_nav {
     display: none;
 }
@@ -61,20 +77,19 @@ a {
 
 
 footer {
-    clear: both;
+    position: absolute;
+    bottom: 0;
     text-align: center;
     line-height: 10px;
     letter-spacing: 5px;
-    padding: 100px 0 0 0;
+    padding: 140px 0 0 0;
+    width: 100%;
+
 }
 
 
 
 /* Home Page */
-.container {
-    position: relative;
-}
-
 
 .concert { 
     margin-top: 2%;
@@ -198,7 +213,9 @@ textarea {
 
 
 /* Product Details Page */
-
+.product_desc {
+    width: 650px;
+}
 .img_bss {
     float: left;
     margin-left: 20%;
@@ -294,21 +311,24 @@ form {
 
     .nav-indiv {
         display:block;
+        padding: 14px;
     }
 
     .nav-content a {
         color: white;
-        padding: 14px 16px;
         text-decoration: none;
         font-size: 17px;
         display: block;
       }
-      .nav-content a.icon {
+    .icon {
         background: black;
-        display: block;
+        display: inline-block;
         position: relative;
-        right: 30px;
-        top: 30px;  
+
+      }
+
+      .fa-bars {
+        font-size: 40px;  
       }
 
 
@@ -352,6 +372,10 @@ form {
         float: right;
         margin-top: 5%;
     }
-
-
+    /* WTF DO I DO IT NO WORK
+    .product_details {
+        width: 400px;
+        text-align: right;
+    }
+    */
 }
