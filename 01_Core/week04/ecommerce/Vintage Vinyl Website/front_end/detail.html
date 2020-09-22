@@ -16,33 +16,8 @@
 <body>
     <div class="container">
         <header class="default_nav">
-            <nav class="desktop_nav">
-                <ul class="nav-content">
-                    <li class="nav-indiv"><a href="about_us.html">About Us</a></li>
-                    <li class="nav-indiv"><a href="genres.html">Genres</a></li>
-                    <li class="nav-indiv" id="record"><a href="index.html">VRP</a></li>
-                    <li class="nav-indiv"><a href="local.html">Local</a></li>
-                    <li class="nav-indiv"><a href="contact.html">Contact Us</a></li>
-                </ul>
-            </nav>
-            <nav class="mobile_nav">
-                <div class="mobile_nav-visible">
-                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                        <i class="fa fa-bars"></i>
-                    </a>
-                    <a href="index.html" class="active">VRP Home</a>
-                </div>
-                <div id="myLinks">
-                    <ul class="nav-content"></ul>
-                    <li class="nav-indiv"><a href="about_us.html">About Us</a></li>
-                    <li class="nav-indiv"><a href="genres.html">Genres</a></li>
-                    <li class="nav-indiv"><a href="local.html">Local</a></li>
-                    <li class="nav-indiv"><a href="contact.html">Contact Us</a></li>
-                    </ul>
-                </div>
-            </nav>
         </header>
-
+<main class="main clearfix"> 
     <div class="product_details">
         <img src="assets/images/broken_social_scene.jpg" alt="broken" class="img_bss">
 
@@ -52,14 +27,16 @@
             <p class="product_desc">Ad enim narwhal palo santo forage proident et. Mustache adaptogen nostrud quis roof party ethical, celiac pitchfork art party tumeric try-hard af viral. Actually exercitation green juice chartreuse bushwick. Drinking vinegar typewriter in, ugh fam cliche lumbersexual street art ramps vegan. Hot chicken velit chicharrones, portland duis occaecat tempor put a bird on it small batch in iceland.</p>
 
 
-            <form>
+            <form method="POST">
                 <div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value">-</div>
                 <input type="number" id="number" value="0" />
                 <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value">+</div>
+                <button class="btn cart">Add to Cart</button>
             </form>
         </div>
 
     </div>
+</main>
     <footer>
         <p>&copy; Amanda Davis 2020</p>
 
@@ -76,7 +53,8 @@
         </a>
     </footer>
 </div>
-    <script src="home.js"></script>
+    <script src="assets/js/quantityProduct.js"></script>
+    <script src="assets/js/nav.js"></script>
 </body>
 
 </html>

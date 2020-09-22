@@ -16,36 +16,12 @@
 <body>
     <div class="container">
         <header class="default_nav">
-            <nav class="desktop_nav">
-                <ul class="nav-content">
-                    <li class="nav-indiv"><a href="about_us.html">About Us</a></li>
-                    <li class="nav-indiv"><a href="genres.html">Genres</a></li>
-                    <li class="nav-indiv" id="record"><a href="index.html">VRP</a></li>
-                    <li class="nav-indiv"><a href="local.html">Local</a></li>
-                    <li class="nav-indiv"><a href="contact.html">Contact Us</a></li>
-                </ul>
-            </nav>
-            <nav class="mobile_nav">
-                <div class="mobile_nav-visible">
-                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                        <i class="fa fa-bars"></i>
-                    </a>
-                    <a href="index.html" class="active">VRP Home</a>
-                </div>
-                <div id="myLinks">
-                    <ul class="nav-content"></ul>
-                    <li class="nav-indiv"><a href="about_us.html">About Us</a></li>
-                    <li class="nav-indiv"><a href="genres.html">Genres</a></li>
-                    <li class="nav-indiv"><a href="local.html">Local</a></li>
-                    <li class="nav-indiv"><a href="contact.html">Contact Us</a></li>
-                    </ul>
-                </div>
-            </nav>
         </header>
 
+        <main>
     <div class="search-container">
             <input type="text" placeholder="Search.." name="search" size="30" aria-label="search">
-            <button type="submit"><i class="fa fa-search"></i></button>
+            <button type="submit"><i class="fa fa-search" aria-label="submit_search"></i></button>
         </form>
 
         <div class="dropdown-filter">
@@ -58,7 +34,7 @@
 
         <div class="dropdown-filter">
             <label for="genres">Filter by Genre:</label>
-            <select name="genre" id="genre">
+            <select name="genre" id="genres">
                 <option value="Indie">Indie</option>
                 <option value="Emo_Punk">Emo/Punk</option>
                 <option value="Alternative">Alternative</option>
@@ -103,6 +79,7 @@
             <p>$19.99</p>
         </a>
     </div>
+</main>
     <footer>
         <p>&copy; Amanda Davis 2020</p>
 
@@ -119,7 +96,8 @@
         </a>
     </footer>
     </div>
-    <script src="home.js"></script>
+
+    <script src="assets/js/nav.js"></script>
 </body>
 
 </html>

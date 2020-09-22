@@ -352,5 +352,9 @@ form {
     .concert {
         margin-top: 0; 
     }
+    /*genre search*/
+    .search-container {
+        flex-wrap: wrap;
+    }
 
 }
