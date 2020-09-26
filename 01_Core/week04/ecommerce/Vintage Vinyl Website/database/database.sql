@@ -1,5 +1,5 @@
 USE vrp;
-
+-- Description addition
 CREATE TABLE products (
     product_ID INT NOT NULL,
     artist VARCHAR(100),
@@ -18,6 +18,7 @@ CREATE TABLE contact (
     preferred VARCHAR(50),
     referral VARCHAR(50),
     comments VARCHAR(200),
+    date_creation TIMESTAMP NOT NULL ON UPDATE CURRENT_TIMESTAMP,
     PRIMARY KEY (contact_ID)
 );
 

@@ -12,7 +12,7 @@ services:
         MYSQL_DATABASE: vrp
     # give the container a name so we can refer to it later rather than using an ID
     container_name: database
-    # map the mysql port 3306 ????????--asking JESSSSSS--
+    # map the mysql port 3306, used sudo lsof to override permissions and find, then killed the previous running port, then used docker compose up
     ports:
         - "3306:3306"
     # connects to backend
