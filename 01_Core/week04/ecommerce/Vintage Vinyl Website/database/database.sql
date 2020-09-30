@@ -1,32 +1,30 @@
 USE vrp;
 -- Description addition
 CREATE TABLE products (
-    product_ID INT NOT NULL,
+    product_ID TINYINT NOT NULL,
     artist VARCHAR(100),
-    price FLOAT,
+    price DECIMAL(7,2),
     genre VARCHAR(100),
     img VARCHAR(100),
     PRIMARY KEY (product_ID)
 );
 
 CREATE TABLE contact (
-    contact_ID INT NOT NULL AUTO_INCREMENT,
+    contact_ID SMALLINT NOT NULL AUTO_INCREMENT,
     first_name VARCHAR(50),
     last_name VARCHAR(50),
     email VARCHAR(50),
-    phone INT,
+    phone CHAR(10),--USED TO GIVE DIGITS NECESSARY IN THE EVENT SOMEONE FORMATS DIFFERENTLY OR IS OUTSIDE DIGIT RANGE
     preferred VARCHAR(50),
     referral VARCHAR(50),
-    comments VARCHAR(200),
+    comments VARCHAR(1000),
     date_creation TIMESTAMP NOT NULL ON UPDATE CURRENT_TIMESTAMP,
     PRIMARY KEY (contact_ID)
 );
 
 INSERT INTO products (
     product_ID, artist, price, genre, img
-)
-
-VALUES 
+) VALUES 
 (1, "Florence and the Machine", 19.99, "Indie", "assets/images/florence.jpg"),
 (2, "Joyce Manor", 19.99, "Emo/Punk", "assets/images/joyce_manor.jpg"),
 (3, "Wolf Parade", 19.99, "Indie", "assets/images/wolf_parade.jpg"),

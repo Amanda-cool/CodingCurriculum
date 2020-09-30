@@ -13,65 +13,64 @@
 
 <body>
     <div class="container">
-        <header class="default_nav">
-        </header>
-<main class="main clearfix">
-    <form class="container_contact" method ="post">
-        <fieldset>
-            <legend>Contact Us!</legend>
+        <header class="default_nav"></header>
+        <main class="main clearfix">
+            <form class="container_contact" method ="post">
+                <fieldset>
+                    <legend>Contact Us!</legend>
 
-            <div class="preference">
-                <label for="contact_first_name">First Name</label>
-                <input type="text" id="contact_first_name" required>
-            </div>
+                    <div class="preference">
+                        <label for="contact_first_name">First Name</label>
+                        <input type="text" id="contact_first_name" required>
+                    </div>
 
-            <div class="preference">
-                <label for="contact_last_name">Last Name</label>
-                <input type="text" id="contact_last_name" required>
-            </div>
+                    <div class="preference">
+                        <label for="contact_last_name">Last Name</label>
+                        <input type="text" id="contact_last_name" required>
+                    </div>
 
-            <label for="contact" class="preference">Preferred Contact Method:</label>
-            <div class="preference">
-                <input type="radio" id="phone" name="contact_method" value="phone">
-                <label for="phone" class="preferred">Phone</label>
-            </div>
+                    <label for="contact" class="preference">Preferred Contact Method:</label>
+                    <div class="preference">
+                        <input type="radio" id="phone" name="contact_method" value="phone">
+                        <label for="phone" class="preferred">Phone</label>
+                    </div>
 
-            <div class="preference">
-                <input type="radio" id="email" name="contact_method" value="email">
-                <label for="email" class="preferred">Email</label>
-            </div>
-            <div class="phone_number"><label for="contact_phone">Phone</label>
-                <input type="tel" id="contact_phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="877-555-4321"
-                    required>
-            </div>
+                    <div class="preference">
+                        <input type="radio" id="email" name="contact_method" value="email">
+                        <label for="email" class="preferred">Email</label>
+                    </div>
+                    <div class="phone_number"><label for="contact_phone">Phone</label>
+                        <input type="tel" id="contact_phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="877-555-4321"
+                            required>
+                    </div>
 
-            <div class="email_address"><label for="contact_email">Email</label>
-                <input type="email" id="contact_email"  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
-            </div>
+                    <div class="email_address">
+                        <label for="contact_email">Email</label>
+                        <input type="email" id="contact_email"  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+                    </div>
 
-            <p> How did you hear about us?</p>
-            <input type="checkbox" id="tv" name="tv" value="TV" class="radio_ref">
-            <label for="tv"> TV</label>
-            <input type="checkbox" id="radio" name="radio" value="Radio" class="radio_ref">
-            <label for="radio"> Radio</label>
-            <input type="checkbox" id="friend" name="friend" value="Friend" class="radio_ref">
-            <label for="friend"> Friend</label>
-            <input type="checkbox" id="conference" name="conference" value="Conference" class="radio_ref">
-            <label for="conference"> Conference</label><br><br>
+                    <p> How did you hear about us?</p>
+                    <input type="checkbox" id="tv" name="tv" value="TV" class="radio_ref">
+                    <label for="tv"> TV</label>
+                    <input type="checkbox" id="radio" name="radio" value="Radio" class="radio_ref">
+                    <label for="radio"> Radio</label>
+                    <input type="checkbox" id="friend" name="friend" value="Friend" class="radio_ref">
+                    <label for="friend"> Friend</label>
+                    <input type="checkbox" id="conference" name="conference" value="Conference" class="radio_ref">
+                    <label for="conference"> Conference</label>
 
 
-            <label for="comments" class="preference">Comments:</label>
+                    <label for="comments" class="preference">Comments:</label>
 
-            <textarea id="comments" name="comments" rows="7" cols="50"
-                placeholder="Please leave any questions or comments and we will get back to you ASAP." required></textarea>
-            <input type="submit" value="Submit">
-        </fieldset>
-        </form>
-
-    <div class="contact_image">
-        <img src="assets/images/heart_band.png" alt="heart_band" class="heart_image">
-    </div>
-</main>
+                    <textarea id="comments" name="comments" rows="7" cols="50"
+                        placeholder="Please leave any questions or comments and we will get back to you ASAP." required></textarea>
+                    <input type="submit" value="Submit">
+                </fieldset>
+            </form>
+        <div class="contact_image">
+            <img src="assets/images/heart_band.png" alt="heart_band" class="heart_image">
+        </div>
+    </main>
     <footer>
         <p>&copy; Amanda Davis 2020</p>
 
@@ -87,7 +86,7 @@
             <i id="google" class="fa fa-google" style="font-size: 20px;" aria-label = "Google"></i>
         </a>
     </footer>
-    </div>  
+</div>  
 
     <script src="assets/js/nav.js"></script>
 </body>

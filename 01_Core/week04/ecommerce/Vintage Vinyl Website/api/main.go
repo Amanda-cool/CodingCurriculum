@@ -22,7 +22,7 @@ type product struct {
 // global pointer to sql db  so we don't end up in random locations
 var db *sql.DB
 
-// Website can access the database, puts other users on whitelist for access
+// Website can access the database, puts other users on whitelist for access, request made to API to allot permission to the domain
 func enableCors(w *http.ResponseWriter) {
 	(*w).Header().Set("Access-Control-Allow-Origin", "*")
 }
@@ -38,8 +38,8 @@ func main() {
 	defer db.Close()
 	// establishing a set of instructions to reach the port that will be used
 	router := mux.NewRouter()
-	// defining a handler toperform a GET method and receive product info
-	router.HandleFunc("/products", fetchProducts).Methods("GET")
+	// defining a handler to perform a GET method and receive product info
+	router.HandleFunc("/genres", fetchProducts).Methods("GET")
 
 	log.Fatal(http.ListenAndServe(":2000", router))
 }
@@ -56,7 +56,7 @@ func fetchProducts(w http.ResponseWriter, r *http.Request) {
 	// Execute the query
 	results, err := db.Query(query)
 	if err != nil {
-		panic(err.Error())
+		panic(err.Error())//execute status error header here!!!!
 	}
 
 	for results.Next() {
@@ -68,6 +68,7 @@ func fetchProducts(w http.ResponseWriter, r *http.Request) {
 		}
 		products = append(products, product)
 	}
+	// Similar to  200 status code , there are different status codes for different things
 	w.WriteHeader(http.StatusOK)
 	w.Header().Set("Content-Type", "application/json")
 	json.NewEncoder(w).Encode(products)
