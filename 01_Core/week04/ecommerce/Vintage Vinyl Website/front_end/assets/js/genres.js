@@ -40,7 +40,7 @@ fetch(`http://localhost:2000/genres`)
 
 function search() {
     const indProd = document.querySelectorAll(".ind-prod");
-    let input = document.getElementById("search-box")
+    let input = document.getElementById("search-box");
     let inputF = input.value.toUpperCase();
 
     for (i = 0; i < indProd.length; i++) {
@@ -54,15 +54,31 @@ function search() {
         }
     }
 }
-
-
-
-
-
-
-
 // Filter functionality for genre
 
+function sortGenre() {
+    console.log("do work");
+    const indProd = document.querySelectorAll(".ind-prod");
+    let genreInput = document.getElementById("genres").value;
+
+    for (i = 0; i < indGenre.length; i++) {
+        let genreArr = indProd[i].getElementsByClassName("genre-magic").innerHTML;
+        
+        if (genreInput = "All") {
+           indProd[i].style.display = "block"
+        } else { if (genreArr[i] = genreInput) {
+            indProd[i].style.display = "block";
+        } else {
+            indProd[i].style.display = "none";
+        }}
+    }
+
+
+
+
+
+
+}
 
 
 

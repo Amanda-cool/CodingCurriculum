@@ -24,19 +24,21 @@
              <button type="submit" onclick="search()"><i class="fa fa-search" aria-label="submit_search"></i></button>
 
 
-        <div class="dropdown-filter">
+        <div class="dropdown-filter" id="price-drop">
             <label for="price">Filter by Price</label>
             <select name="price" id="price">
+                <option value="none">None</option>
                 <option value="Highest">Highest</option>
                 <option value="Lowest">Lowest</option>
             </select>
         </div>
 
-        <div class="dropdown-filter">
+        <div class="dropdown-filter" id="genre-drop">
             <label for="genres">Filter by Genre:</label>
-            <select name="genre" id="genres">
+            <select name="genres" id="genres" onchange="sortGenre()">
+                <option value="All">All</option>
                 <option value="Indie">Indie</option>
-                <option value="Emo_Punk">Emo/Punk</option>
+                <option value="Emo/Punk">Emo/Punk</option>
                 <option value="Alternative">Alternative</option>
             </select>
         </div>
