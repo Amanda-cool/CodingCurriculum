@@ -188,8 +188,19 @@ textarea {
 
 .record-container p {
     text-align: center;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
 }
 
+.genre-magic {
+    display: none;
+}
+
+.ind-prod {
+    width: 220px;
+    padding: 20px;
+}
 /* About Us Page */
 
 .about_us_container {

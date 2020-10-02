@@ -20,9 +20,9 @@
 
         <main>
     <div class="search-container">
-            <input type="text" placeholder="Search.." name="search" size="30" aria-label="search">
-            <button type="submit"><i class="fa fa-search" aria-label="submit_search"></i></button>
-        </form>
+            <input onkeyup="search()" id = "search-box" type="text" placeholder="Search.." name="search" size="30" aria-label="search">
+             <button type="submit" onclick="search()"><i class="fa fa-search" aria-label="submit_search"></i></button>
+
 
         <div class="dropdown-filter">
             <label for="price">Filter by Price</label>
@@ -43,42 +43,7 @@
     </div>
     <!--end search container-->
 
-    <div class="record-container">
-        <a href="detail.html"><img src="assets/images/florence.jpg" alt="florence" class="record_ind">
-            <p class="record_pad"> Florence and the Machine</p>
-            <p>$19.99</p>
-        </a>
-        <a href="detail.html"><img src="assets/images/joyce_manor.jpg" alt="joyce_manor" class="record_ind">
-            <p class="record_pad"> Joyce Manor</p>
-            <p>$19.99</p>
-        </a>
-        <a href="detail.html"><img src="assets/images/wolf_parade.jpg" alt="wolf_parade" class="record_ind">
-            <p class="record_pad"> Wolf Parade</p>
-            <p>$19.99</p>
-        </a>
-        <a href="detail.html"><img src="assets/images/king_gizzard.jpg" alt="king_gizzard" class="record_ind">
-            <p class="record_pad"> King Gizzard and ...</p>
-            <!--Will set this up to perform ellipsis-->
-            <p>$19.99</p>
-        </a>
-        <a href="detail.html"><img src="assets/images/julien_baker.jpg" alt="julien_baker" class="record_ind">
-            <p class="record_pad"> Julien Baker</p>
-            <p>$19.99</p>
-        </a>
-        <a href="detail.html"><img src="assets/images/broken_social_scene.jpg" alt="broken_social_scene"
-                class="record_ind">
-            <p class="record_pad"> Broken Social Scene</p>
-            <p>$19.99</p>
-        </a>
-        <a href="detail.html"><img src="assets/images/blonde_redhead.jpg" alt="blonde_redhead" class="record_ind">
-            <p class="record_pad"> Blonde Redhead</p>
-            <p>$19.99</p>
-        </a>
-        <a href="detail.html"><img src="assets/images/jeff_rosenstock.jpg" alt="jeff_rosenstock" class="record_ind">
-            <p class="record_pad"> Jeff Rosenstock</p>
-            <p>$19.99</p>
-        </a>
-    </div>
+    <div class="record-container"></div>
 </main>
     <footer>
         <p>&copy; Amanda Davis 2020</p>

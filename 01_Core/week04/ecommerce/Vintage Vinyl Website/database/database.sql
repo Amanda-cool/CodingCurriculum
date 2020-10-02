@@ -14,7 +14,7 @@ CREATE TABLE contact (
     first_name VARCHAR(50),
     last_name VARCHAR(50),
     email VARCHAR(50),
-    phone CHAR(10),--USED TO GIVE DIGITS NECESSARY IN THE EVENT SOMEONE FORMATS DIFFERENTLY OR IS OUTSIDE DIGIT RANGE
+    phone CHAR(10),
     preferred VARCHAR(50),
     referral VARCHAR(50),
     comments VARCHAR(1000),
@@ -25,12 +25,12 @@ CREATE TABLE contact (
 INSERT INTO products (
     product_ID, artist, price, genre, img
 ) VALUES 
-(1, "Florence and the Machine", 19.99, "Indie", "assets/images/florence.jpg"),
-(2, "Joyce Manor", 19.99, "Emo/Punk", "assets/images/joyce_manor.jpg"),
-(3, "Wolf Parade", 19.99, "Indie", "assets/images/wolf_parade.jpg"),
-(4, "King Gizzard and the Wizard Lizard", 19.99, "Alternative", "assets/images/king_gizzard.jpg"),
+(1, "Florence and the Machine", 29.99, "Indie", "assets/images/florence.jpg"),
+(2, "Joyce Manor", 49.99, "Emo/Punk", "assets/images/joyce_manor.jpg"),
+(3, "Wolf Parade", 119.99, "Indie", "assets/images/wolf_parade.jpg"),
+(4, "King Gizzard and the Wizard Lizard", 25.99, "Alternative", "assets/images/king_gizzard.jpg"),
 (5, "Julien Baker", 19.99, "Indie", "assets/images/julien_baker.jpg"),
-(6, "Broken Social Scene", 19.99, "Indie", "assets/images/broken_social_scene.jpg"),
-(7, "Blonde Redhead", 19.99, "Alternative", "assets/images/blonde_redhead.jpg"),
+(6, "Broken Social Scene", 15.99, "Indie", "assets/images/broken_social_scene.jpg"),
+(7, "Blonde Redhead", 32.99, "Alternative", "assets/images/blonde_redhead.jpg"),
 (8, "Jeff Rosenstock", 19.99, "Emo/Punk", "assets/images/jeff_rosenstock.jpg");
 
