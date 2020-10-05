@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="assets/css/home.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
 <body>
@@ -20,12 +20,12 @@
                     <legend>Contact Us!</legend>
 
                     <div class="preference">
-                        <label for="contact_first_name">First Name</label>
+                        <label class="space-con" for="contact_first_name">First Name</label>
                         <input type="text" id="contact_first_name" required>
                     </div>
 
                     <div class="preference">
-                        <label for="contact_last_name">Last Name</label>
+                        <label class="space-con" for="contact_last_name">Last Name</label>
                         <input type="text" id="contact_last_name" required>
                     </div>
 
@@ -39,16 +39,17 @@
                         <input type="radio" id="email" name="contact_method" value="email">
                         <label for="email" class="preferred">Email</label>
                     </div>
-                    <div class="phone_number"><label for="contact_phone">Phone</label>
+                    <div class="phone_number">
+                        <label class="space-con" for="contact_phone">Phone</label>
                         <input type="tel" id="contact_phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="877-555-4321"
                             required>
                     </div>
 
                     <div class="email_address">
-                        <label for="contact_email">Email</label>
+                        <label class="space-con" for="contact_email">Email</label>
                         <input type="email" id="contact_email"  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
                     </div>
-
+                    <div class="ref-con">
                     <p> How did you hear about us?</p>
                     <input type="checkbox" id="tv" name="tv" value="TV" class="radio_ref">
                     <label for="tv"> TV</label>
@@ -58,7 +59,7 @@
                     <label for="friend"> Friend</label>
                     <input type="checkbox" id="conference" name="conference" value="Conference" class="radio_ref">
                     <label for="conference"> Conference</label>
-
+                    </div>
 
                     <label for="comments" class="preference">Comments:</label>
 
@@ -75,15 +76,15 @@
         <p>&copy; Amanda Davis 2020</p>
 
         <a href="https://www.facebook.com">
-            <i id="facebook" class="fa fa-facebook" style="font-size: 20px;" aria-label="Facebook"></i>
+            <i id="facebook" class="fa fa-facebook" aria-label="Facebook"></i>
         </a>
 
         <a href="https://www.instagram.com">
-            <i id="instagram" class="fa fa-instagram" style="font-size: 20px;" aria-label="Instagram"></i>
+            <i id="instagram" class="fa fa-instagram" aria-label="Instagram"></i>
         </a>
 
         <a href="https://www.google.com">
-            <i id="google" class="fa fa-google" style="font-size: 20px;" aria-label = "Google"></i>
+            <i id="google" class="fa fa-google" aria-label = "Google"></i>
         </a>
     </footer>
 </div>  

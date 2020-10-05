@@ -13,7 +13,8 @@ body {
     position: relative;
     min-height: 100vh;
     box-sizing: border-box;
-    padding-bottom: 202px;
+    padding-bottom: 200px;
+    /* The height of the footer is 200px with padding */
 }
 .desktop_nav {
     padding-top: 20px;
@@ -31,10 +32,13 @@ body {
 
 .nav-content {
     list-style: none;
-    display: block;
+    display: flex;
+    justify-content: space-around;
     line-height: 20px;
     font-size: 26px;
     height: 80px;
+    padding-left: 15%;
+    padding-right: 15%;
 }
 
 .nav-indiv {
@@ -81,9 +85,11 @@ footer {
     bottom: 0;
     text-align: center;
     line-height: 10px;
+    height: 60px;
     letter-spacing: 5px;
     padding: 140px 0 0 0;
     width: 100%;
+    font-size: 20px;
 
 }
 
@@ -143,6 +149,21 @@ textarea {
     margin-right: auto;
 }
 
+.space-con {
+    width: 20px;
+    padding: 20px;
+}
+
+.email_address {
+    padding: 20px;
+}
+
+.ref-con label, .ref-con input {
+    display: inline-block;
+}
+.ref-con label {
+    padding-right: 15px;
+}
 /* Genres Product Page */
 
 .search-container {
@@ -206,14 +227,13 @@ textarea {
 .about_us_container {
     float: left;
     margin-top: 5%;
-    margin-left: 15%;
     width: 500px;
 }
+
 
 .record_player {
     float: right;
     margin-top: 10%;
-    margin-right: 25%;
 }
 
 
@@ -222,6 +242,10 @@ textarea {
     height: 400px;
 }
 
+.about_page_container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
 
 /* Product Details Page */
 .product_desc {
@@ -367,5 +391,49 @@ form {
     .search-container {
         flex-wrap: wrap;
     }
+
+    /* picture carousel */
+
+    .featured {
+        padding: 0px;
+    }
+    .specials {
+        margin-right: 0px;
+    }
+
+    /* contact us image */
+
+    .contact_image {
+        float: none;
+    }
+
+    .heart_image {
+        width: 100%;
+    }
+
+    .container_contact {
+        width: 100%;
+        margin: 0px;
+    }
+
+    #comments {
+        width: 400px;
+    }
+
+    /* Product Details Page */
+
+    .img_bss {
+        float: none;
+    }
+
+    .description {
+        float: none;
+        margin-right: 0px;
+    }
+
+    .product_desc {
+        width: 100%;
+    }
+
 
 }

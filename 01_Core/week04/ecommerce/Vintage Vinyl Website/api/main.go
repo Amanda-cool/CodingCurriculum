@@ -3,11 +3,14 @@ package main
 import (
 	"database/sql"
 	"encoding/json"
+	"fmt"
 	"log"
 	"net/http"
+	"os"
 
 	_ "github.com/go-sql-driver/mysql"
 	"github.com/gorilla/mux"
+	"github.com/joho/godotenv"
 )
 
 // Vinyl  struct for database
@@ -29,7 +32,13 @@ func enableCors(w *http.ResponseWriter) {
 
 func main() {
 	var err error
-	db, err = sql.Open("mysql", "root:Greatjade_912@tcp(database:3306)/vrp")
+	err = godotenv.Load()
+	if err != nil {
+		panic(err.Error())
+	}
+	//retrieve password from .env file
+	var getPw = os.Getenv("DB_PASSWORD")
+	db, err = sql.Open("mysql", fmt.Sprintf("root:%s@tcp(database:3306)/vrp", getPw))
 	// error handling on DB will stop program and print out  error response
 	if err != nil {
 		panic(err.Error())
@@ -56,7 +65,7 @@ func fetchProducts(w http.ResponseWriter, r *http.Request) {
 	// Execute the query
 	results, err := db.Query(query)
 	if err != nil {
-		panic(err.Error())//execute status error header here!!!!
+		panic(err.Error()) //execute status error header here!!!!
 	}
 
 	for results.Next() {

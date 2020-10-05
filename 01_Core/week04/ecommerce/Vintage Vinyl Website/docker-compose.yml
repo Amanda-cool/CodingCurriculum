@@ -8,7 +8,7 @@ services:
         context: ./database
     # table and credentials for SQL
     environment: 
-        MYSQL_ROOT_PASSWORD: Greatjade_912
+        MYSQL_ROOT_PASSWORD: "${DB_PASSWORD}"
         MYSQL_DATABASE: vrp
     # give the container a name so we can refer to it later rather than using an ID
     container_name: database

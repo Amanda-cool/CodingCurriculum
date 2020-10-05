@@ -12,7 +12,7 @@ document.querySelector(".default_nav").innerHTML += `
 </nav>
 <nav class="mobile_nav">
 <div class="mobile_nav-visible">
-    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <a href="javascript:void(0);" class="icon" onclick="mobileDisplay()">
         <i class="fa fa-bars"></i>
     </a>
     <a href="index.html" class="active">VRP Home</a>
