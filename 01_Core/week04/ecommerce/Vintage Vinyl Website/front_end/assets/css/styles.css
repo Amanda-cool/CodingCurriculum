@@ -119,9 +119,18 @@ footer {
     margin-top: 3%;
     margin-right: 20%;
     text-align: center;
-
+    font-size: 16px;
 }
 
+.fmtSpecial {
+    font-size: 22px;
+    text-decoration: underline;
+}
+
+.fmtPrice {
+    color: goldenrod;
+    font-weight: bolder;
+}
 /* Contact Page */
 
 .container_contact {
@@ -245,6 +254,11 @@ textarea {
 .about_page_container {
     max-width: 1000px;
     margin: 0 auto;
+}
+
+.fmtAbout {
+    font-size: 40px;
+    color: goldenrod;
 }
 
 /* Product Details Page */

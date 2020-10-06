@@ -26,8 +26,7 @@
 
         <div class="dropdown-filter" id="price-drop">
             <label for="price">Filter by Price</label>
-            <select name="price" id="price">
-                <option value="None">None</option>
+            <select name="price" id="price" onchange="sortPrice()">
                 <option value="Highest">Highest</option>
                 <option value="Lowest">Lowest</option>
             </select>
