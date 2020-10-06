@@ -43,7 +43,7 @@ func main() {
 	if err != nil {
 		panic(err.Error())
 	}
-	// once you're done with  the DB close it out
+	// once you're done with the DB close it out, leaving it open anyone can send request and hit my DB
 	defer db.Close()
 	// establishing a set of instructions to reach the port that will be used
 	router := mux.NewRouter()
@@ -57,7 +57,7 @@ func fetchProducts(w http.ResponseWriter, r *http.Request) {
 	// enableCors function to allow access
 	enableCors(&w)
 
-	//
+	//Products is a slice based on the struct of product
 	var products []product
 	// Initialize and consolidate the query
 	query := "SELECT product_ID, artist, price, genre, img FROM products"

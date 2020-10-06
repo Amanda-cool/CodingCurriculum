@@ -9,19 +9,6 @@ CREATE TABLE products (
     PRIMARY KEY (product_ID)
 );
 
-CREATE TABLE contact (
-    contact_ID SMALLINT NOT NULL AUTO_INCREMENT,
-    first_name VARCHAR(50),
-    last_name VARCHAR(50),
-    email VARCHAR(50),
-    phone CHAR(10),
-    preferred VARCHAR(50),
-    referral VARCHAR(50),
-    comments VARCHAR(1000),
-    date_creation TIMESTAMP NOT NULL ON UPDATE CURRENT_TIMESTAMP,
-    PRIMARY KEY (contact_ID)
-);
-
 INSERT INTO products (
     product_ID, artist, price, genre, img
 ) VALUES 
