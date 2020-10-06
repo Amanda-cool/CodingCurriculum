@@ -58,7 +58,7 @@ body {
     font-size: 48px;
 
 }
-/**/
+
 .clearfix::after {
     content: "";
     clear: both;
@@ -82,6 +82,7 @@ a {
 
 footer {
     position: absolute;
+    left: 0;
     bottom: 0;
     text-align: center;
     line-height: 10px;
@@ -338,6 +339,36 @@ form {
   }
 
 
+
+/* Local Page */
+.support-container  {
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 5%;
+}
+.support {
+    color: goldenrod;
+    font-size: 45px;
+    font-weight: bolder;
+}
+
+.venue-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.venue-desc {
+    max-width: 500px;
+    padding: 30px;
+    font-size: 20px;
+}
+.venue-image {
+    max-width: 600px;
+    height: 400px;
+}
+
+
 /* Mobile adaptability */
 @media only screen and (max-width:700px) {
     .desktop_nav {
@@ -447,5 +478,11 @@ form {
         width: 100%;
     }
 
+    /* Local Page */
+
+    .venue-image {
+        max-width: 500px;
+        height: 300px;
+    }
 
 }

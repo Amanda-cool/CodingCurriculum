@@ -10,7 +10,7 @@ import (
 
 	_ "github.com/go-sql-driver/mysql"
 	"github.com/gorilla/mux"
-	"github.com/joho/godotenv"
+	//"github.com/joho/godotenv"
 )
 
 // Vinyl  struct for database
@@ -32,11 +32,7 @@ func enableCors(w *http.ResponseWriter) {
 
 func main() {
 	var err error
-	err = godotenv.Load()
-	if err != nil {
-		panic(err.Error())
-	}
-	//retrieve password from .env file
+	// retrieve password from .env file
 	var getPw = os.Getenv("DB_PASSWORD")
 	db, err = sql.Open("mysql", fmt.Sprintf("root:%s@tcp(database:3306)/vrp", getPw))
 	// error handling on DB will stop program and print out  error response

@@ -20,11 +20,12 @@ services:
         - backend
     # database will only communicate with backend 
   api:
+    # give a name for reference
+    container_name: api_go
     #build dockerfile in the folder back_end
     build:
         context: ./api
-    # give a name for reference
-    container_name: api_go
+    env_file: .env
     # go is flexible on port setup so these are not pre-defined
     ports: 
         - "2000:2000"
