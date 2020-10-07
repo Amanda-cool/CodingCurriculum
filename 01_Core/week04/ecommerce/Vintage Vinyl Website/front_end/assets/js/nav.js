@@ -30,6 +30,7 @@ document.querySelector(".default_nav").innerHTML += `
 
 //Mobile nav bar function
 //Starting off my mind started big moving small but later on I realized it would be better to reverse that thought process.
+//myLinks utilized in CSS and media query for display and this is the toggle
 function mobileDisplay() {
     var x = document.getElementById("myLinks");
     if (x.style.display === "block") {

@@ -21,16 +21,21 @@ fetch(`http://localhost:2000/genres`)
                 </a>
             </div>`
         }
+    // Returned to utilize in sortPrice()
         return dataArr = data;
     })
 
 // Search functionality
 function search() {
+    //Utilized  variables:ind-prod class to obtain HTML created within  
     const indProd = document.querySelectorAll(".ind-prod");
+    // citing search-box
     let input = document.getElementById("search-box");
+    // grabbing value from search-box and converting to uppercase for format 
     let inputF = input.value.toUpperCase();
 
     for (i = 0; i < indProd.length; i++) {
+        // [0] starts the index at 0
         let prodArr = indProd[i].getElementsByTagName("p") [0];
         let valueProd = prodArr.textContent || prodArr.innerHTML;
 
@@ -44,11 +49,13 @@ function search() {
 // Filter functionality for genre
 function sortGenre() {
     const indProd = document.querySelectorAll(".ind-prod");
+    // obtaining genres ID from genres.html and the value selected from drop down by user
     let genreInput = document.getElementById("genres").value;
 
     for (let i = 0; i < indProd.length; i++) {
-
+        //creating array of different genre  options from  DB utilizing genre-magic class created in above innerHTML
         let genreArr = indProd[i].getElementsByClassName("genre-magic")  [0];
+        // getting textContent of that value
         let valGen = genreArr.textContent;
 
         if (genreInput === "All") {
@@ -70,6 +77,7 @@ function sortPrice() {
     let sortSelect = document.getElementById("price").value;
 
     if(sortSelect === "Highest") {
+        // condition ? exprIfTrue : exprIfFalse
         dataArr.sort((a, b) => (a.price < b.price) ? 1 : -1);
     }  else if(sortSelect === "Lowest") {
         dataArr.sort((a, b) => (a.price > b.price) ? 1 : -1);
@@ -86,6 +94,7 @@ function sortPrice() {
             </a>
         </div>`
     }
+    //returned to take in as another factor if user want to sort by both drop downs
     sortGenre();
 }
 

@@ -6,6 +6,7 @@ fetch(`http://localhost:2000/genres`)
     })
     //looping through the previous array to return the data in innerHTML
     .then(data => {
+    //function to produce innerHTML that we will be brining over from DB
       prodContainer.innerHTML +=`
       <h2>Featured Artist:</h2>        
       <img class="mySlides" alt="${data[7].artist}" src="${data[7].img}">
@@ -18,7 +19,9 @@ fetch(`http://localhost:2000/genres`)
 
 
 //Slideshow Carousel Main Page
+//variable to start at index
 var myIndex = 0;
+//set earlier timeout  to allow load time
 setTimeout(carousel, 100); 
 
 function carousel() {
