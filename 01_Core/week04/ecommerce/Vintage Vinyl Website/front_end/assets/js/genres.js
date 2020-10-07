@@ -47,7 +47,7 @@ function sortGenre() {
     let genreInput = document.getElementById("genres").value;
 
     for (let i = 0; i < indProd.length; i++) {
-//
+
         let genreArr = indProd[i].getElementsByClassName("genre-magic")  [0];
         let valGen = genreArr.textContent;
 
@@ -68,13 +68,13 @@ function sortGenre() {
 function sortPrice() {
     prodContainer.innerHTML = ""
     let sortSelect = document.getElementById("price").value;
-//
+
     if(sortSelect === "Highest") {
-        dataArr.sort((a, b) => (a.price < b.price)? 1 : -1);
+        dataArr.sort((a, b) => (a.price < b.price) ? 1 : -1);
     }  else if(sortSelect === "Lowest") {
-        dataArr.sort((a, b) => (a.price > b.price)? 1 : -1);
+        dataArr.sort((a, b) => (a.price > b.price) ? 1 : -1);
     }
-//
+
     for (i = 0; i < dataArr.length; i++) {
         prodContainer.innerHTML += `
         <div class="ind-prod">
@@ -86,6 +86,7 @@ function sortPrice() {
             </a>
         </div>`
     }
+    sortGenre();
 }
 
 

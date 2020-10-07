@@ -29,7 +29,7 @@ document.querySelector(".default_nav").innerHTML += `
 `;
 
 //Mobile nav bar function
-//Starting off my mind started big moving small but later on I realized it would be better to revers that thought process.
+//Starting off my mind started big moving small but later on I realized it would be better to reverse that thought process.
 function mobileDisplay() {
     var x = document.getElementById("myLinks");
     if (x.style.display === "block") {

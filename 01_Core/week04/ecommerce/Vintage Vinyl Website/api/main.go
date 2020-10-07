@@ -33,8 +33,8 @@ func enableCors(w *http.ResponseWriter) {
 func main() {
 	var err error
 	// retrieve password from .env file
-	var getPw = os.Getenv("DB_PASSWORD")
-	db, err = sql.Open("mysql", fmt.Sprintf("root:%s@tcp(database:3306)/vrp", getPw))
+	var password = os.Getenv("DB_PASSWORD")
+	db, err = sql.Open("mysql", fmt.Sprintf("root:%s@tcp(database:3306)/vrp", password))
 	// error handling on DB will stop program and print out  error response
 	if err != nil {
 		panic(err.Error())

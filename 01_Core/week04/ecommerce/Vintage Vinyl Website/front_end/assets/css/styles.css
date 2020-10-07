@@ -4,7 +4,8 @@
 body {
     max-width: 100%;
     min-height: 100vh;
-    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-family: 'Monoton', cursive;
+    font-family: 'Montserrat', sans-serif;
     background-color: black;
     color: white;
 }
@@ -47,6 +48,7 @@ body {
     display: inline-block;
     padding: 0 10px;
     color: white;
+    font-size: 35px;
 }
 
 #record a {
@@ -85,12 +87,12 @@ a {
 footer {
     position: relative;
     left: 0;
-    bottom: 40px;
+    bottom: 0;
     text-align: center;
     line-height: 10px;
     height: 100px;
     letter-spacing: 5px;
-    padding: 140px 0 0 0;
+    padding-top: 140px;
     width: 100%;
     font-size: 20px;
 }
@@ -241,33 +243,24 @@ textarea {
 
 /* About Us Page */
 
-.about_us_container {
-    float: left;
-    margin-top: 5%;
-    width: 500px;
-}
-
-
-.record_player {
-    float: right;
-    margin-top: 10%;
-}
-
-
 .player_image {
     width: 400px;
     height: 400px;
 }
 
-.about_page_container {
-    max-width: 1000px;
+.about-page-container {
     margin: 0 auto;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    padding-top: 10%;
 }
 
 .fmtAbout {
+    margin-top: 0;
     font-size: 40px;
     color: goldenrod;
 }
+
 
 /* Product Details Page */
 .product_desc {
@@ -509,6 +502,15 @@ input[type=number]::-webkit-outer-spin-button {
     .venue-image {
         max-width: 500px;
         height: 300px;
+    }
+
+    /* About us */
+    .about-page-container {
+        display: block;
+    }
+
+    .player_image {
+        padding-top: 60px;
     }
 
 }
