@@ -3,6 +3,7 @@
 /* Universal */
 body {
     max-width: 100%;
+    min-height: 100vh;
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
     background-color: black;
     color: white;
@@ -84,7 +85,7 @@ a {
 footer {
     position: relative;
     left: 0;
-    bottom: 0;
+    bottom: 40px;
     text-align: center;
     line-height: 10px;
     height: 100px;
