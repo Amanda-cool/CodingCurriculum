@@ -19,50 +19,49 @@
         </header>
 
         <main>
-    <div class="search-container">
-            <input onkeyup="search()" id = "search-box" type="text" placeholder="Search.." name="search" size="30" aria-label="search">
-             <button type="submit" onclick="search()"><i class="fa fa-search" aria-label="submit_search"></i></button>
+            <div class="search-container">
+                <input onkeyup="search()" id="search-box" type="text" placeholder="Search.." name="search" size="30" aria-label="search">
 
 
-        <div class="dropdown-filter" id="price-drop">
-            <label for="price">Filter by Price</label>
-            <select name="price" id="price" onchange="sortPrice()">
-                <option value="Highest">Highest</option>
-                <option value="Lowest">Lowest</option>
-            </select>
-        </div>
+                <div class="dropdown-filter" id="price-drop">
+                    <label for="price">Filter by Price</label>
+                    <select name="price" id="price" onchange="sortPrice()">
+                        <option value="Highest">Highest</option>
+                        <option value="Lowest">Lowest</option>
+                    </select>
+                </div>
 
-        <div class="dropdown-filter" id="genre-drop">
-            <label for="genres">Filter by Genre:</label>
-            <select name="genres" id="genres" onchange="sortGenre()">
-                <option value="All">All</option>
-                <option value="Indie">Indie</option>
-                <option value="Emo/Punk">Emo/Punk</option>
-                <option value="Alternative">Alternative</option>
-            </select>
-        </div>
+                <div class="dropdown-filter" id="genre-drop">
+                    <label for="genres">Filter by Genre:</label>
+                    <select name="genres" id="genres" onchange="sortGenre()">
+                        <option value="All">All</option>
+                        <option value="Indie">Indie</option>
+                        <option value="Emo/Punk">Emo/Punk</option>
+                        <option value="Alternative">Alternative</option>
+                    </select>
+                </div>
+            </div>
+            <!--end search container-->
+
+            <div class="record-container"></div>
+        </main>
+
     </div>
-    <!--end search container-->
+    <footer>
+        <p>&copy; Amanda Davis 2020</p>
 
-    <div class="record-container"></div>
-</main>
-<footer>
-    <p>&copy; Amanda Davis 2020</p>
+        <a href="https://www.facebook.com">
+            <i id="facebook" class="fa fa-facebook" aria-label="Facebook"></i>
+        </a>
 
-    <a href="https://www.facebook.com">
-        <i id="facebook" class="fa fa-facebook" aria-label="Facebook"></i>
-    </a>
+        <a href="https://www.instagram.com">
+            <i id="instagram" class="fa fa-instagram" aria-label="Instagram"></i>
+        </a>
 
-    <a href="https://www.instagram.com">
-        <i id="instagram" class="fa fa-instagram" aria-label="Instagram"></i>
-    </a>
-
-    <a href="https://www.google.com">
-        <i id="google" class="fa fa-google" aria-label = "Google"></i>
-    </a>
-</footer>
-    </div>
-
+        <a href="https://www.google.com">
+            <i id="google" class="fa fa-google" aria-label="Google"></i>
+        </a>
+    </footer>
     <script src="assets/js/nav.js"></script>
     <script src="assets/js/genres.js"></script>
 </body>

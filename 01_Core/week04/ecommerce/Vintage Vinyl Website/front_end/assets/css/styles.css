@@ -2,31 +2,32 @@
 
 /* Universal */
 body {
-    max-width: 100%; 
+    max-width: 100%;
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
     background-color: black;
     color: white;
 }
+
 .container {
     max-width: 1600px;
+    min-height: 85vh;
     margin: 0 auto;
     position: relative;
-    min-height: 100vh;
     box-sizing: border-box;
-    padding-bottom: 200px;
-    /* The height of the footer is 200px with padding */
 }
+
 .desktop_nav {
     padding-top: 20px;
 }
+
 .mySlides {
-    display:none;
+    display: none;
     width: 400px;
-    height:400px;
+    height: 400px;
     margin: 0 auto;
 }
 
-.default_nav { 
+.default_nav {
     text-align: center;
 }
 
@@ -81,12 +82,12 @@ a {
 
 
 footer {
-    position: absolute;
+    position: relative;
     left: 0;
     bottom: 0;
     text-align: center;
     line-height: 10px;
-    height: 60px;
+    height: 100px;
     letter-spacing: 5px;
     padding: 140px 0 0 0;
     width: 100%;
@@ -97,7 +98,7 @@ footer {
 
 /* Home Page */
 
-.concert { 
+.concert {
     margin-top: 2%;
     width: 100%;
     max-height: 600px;
@@ -109,6 +110,7 @@ footer {
     float: left;
     padding-left: 20%;
 }
+
 .specials {
     float: right;
     width: 400px;
@@ -130,13 +132,14 @@ footer {
     color: goldenrod;
     font-weight: bolder;
 }
+
 /* Contact Page */
 
 .container_contact {
     text-align: center;
     max-width: 600px;
     float: left;
-    margin-left:5%;
+    margin-left: 5%;
     margin-top: 4%;
 }
 
@@ -166,24 +169,28 @@ textarea {
     padding: 20px;
 }
 
-.ref-con label, .ref-con input {
+.ref-con label,
+.ref-con input {
     display: inline-block;
 }
+
 .ref-con label {
     padding-right: 15px;
 }
+
 /* Genres Product Page */
 
 .search-container {
     display: flex;
     align-content: center;
-    padding:3px;
+    padding: 3px;
     margin-top: 7%;
     margin-right: 16px;
     background: goldenrod;
     font-size: 15px;
     cursor: pointer;
 }
+
 .dropdown-filter {
     padding: 8px;
 }
@@ -230,6 +237,7 @@ textarea {
     width: 220px;
     padding: 20px;
 }
+
 /* About Us Page */
 
 .about_us_container {
@@ -264,6 +272,7 @@ textarea {
 .product_desc {
     width: 650px;
 }
+
 .img_bss {
     float: left;
     margin-left: 20%;
@@ -282,9 +291,9 @@ form {
     margin: 0 auto;
     text-align: center;
     padding-top: 50px;
-  }
-  
-  .value-button {
+}
+
+.value-button {
     display: inline-block;
     border: 1px solid #ddd;
     margin: 0px;
@@ -301,28 +310,28 @@ form {
     -ms-user-select: none;
     user-select: none;
     color: black;
-  }
-  
-  .value-button:hover {
+}
+
+.value-button:hover {
     cursor: pointer;
-  }
-  
-  form #decrease {
+}
+
+form #decrease {
     margin-right: -4px;
     border-radius: 8px 0 0 8px;
-  }
-  
-  form #increase {
+}
+
+form #increase {
     margin-left: -4px;
     border-radius: 0 8px 8px 0;
-  }
-  
-  form #input-wrap {
+}
+
+form #input-wrap {
     margin: 0px;
     padding: 0px;
-  }
-  
-  input#number {
+}
+
+input#number {
     text-align: center;
     border: none;
     border-top: 1px solid #ddd;
@@ -330,22 +339,23 @@ form {
     margin: 0px;
     width: 40px;
     height: 40px;
-  }
-  
-  input[type=number]::-webkit-inner-spin-button,
-  input[type=number]::-webkit-outer-spin-button {
-      -webkit-appearance: none;
-      margin: 0;
-  }
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
 
 
 
 /* Local Page */
-.support-container  {
+.support-container {
     max-width: 1200px;
     margin: 0 auto;
     margin-top: 5%;
 }
+
 .support {
     color: goldenrod;
     font-size: 45px;
@@ -363,6 +373,7 @@ form {
     padding: 30px;
     font-size: 20px;
 }
+
 .venue-image {
     max-width: 600px;
     height: 400px;
@@ -374,31 +385,38 @@ form {
     .desktop_nav {
         display: none;
     }
+
     .mobile_nav {
-        padding: 10px 0; 
+        padding: 10px 0;
         display: block;
     }
+
     .default_nav {
-        text-align: left; 
+        text-align: left;
     }
-    .mobile_nav-visible { 
+
+    .mobile_nav-visible {
         display: flex;
         align-items: center;
         flex-direction: row;
         justify-content: flex-start;
     }
+
     .nav-content {
-        display:none;
+        display: none;
     }
+
     /*ul & containing div*/
     .nav-content #myLinks {
         display: none;
     }
+
     /*li*/
     .nav-indiv {
         display: block;
         padding: 14px;
     }
+
     /*links within li*/
     .nav-content a {
         color: white;
@@ -406,30 +424,36 @@ form {
         font-size: 17px;
         display: block;
     }
+
     /*a containing hamburger*/
     .icon {
         background: black;
         display: inline-block;
-        padding-right: 10px; 
+        padding-right: 10px;
     }
+
     /*hamburger*/
     .fa-bars {
         font-size: 40px;
     }
+
     /*nav items*/
     .nav-content a:hover {
         background-color: #ddd;
         color: black;
     }
+
     /*home logo*/
     .active {
         background-color: gold;
         color: black;
-        font-size: 20px; 
+        font-size: 20px;
     }
+
     .concert {
-        margin-top: 0; 
+        margin-top: 0;
     }
+
     /*genre search*/
     .search-container {
         flex-wrap: wrap;
@@ -440,6 +464,7 @@ form {
     .featured {
         padding: 0px;
     }
+
     .specials {
         margin-right: 0px;
     }
