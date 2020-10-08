@@ -1,4 +1,3 @@
-
 // inserting HTML with JS for all Nav bars.
 document.querySelector(".default_nav").innerHTML += `
 <nav class="desktop_nav">
@@ -32,11 +31,10 @@ document.querySelector(".default_nav").innerHTML += `
 //Starting off my mind started big moving small but later on I realized it would be better to reverse that thought process.
 //myLinks utilized in CSS and media query for display and this is the toggle
 function mobileDisplay() {
-    var x = document.getElementById("myLinks");
-    if (x.style.display === "block") {
-      x.style.display = "none";
-    } else {
-      x.style.display = "block";
-    }
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
   }
-  
+}

@@ -21,7 +21,7 @@ fetch(`http://localhost:2000/genres`)
                 </a>
             </div>`
         }
-    // Returned to utilize in sortPrice()
+        // Returned to utilize in sortPrice()
         return dataArr = data;
     })
 
@@ -36,9 +36,9 @@ function search() {
 
     for (i = 0; i < indProd.length; i++) {
         // [0] starts the index at 0
-        let prodArr = indProd[i].getElementsByTagName("p") [0];
+        let prodArr = indProd[i].getElementsByTagName("p")[0];
         let valueProd = prodArr.textContent || prodArr.innerHTML;
-
+        // Matching search value uppercase with category value, if anything matches the array start at 0
         if (valueProd.toUpperCase().indexOf(inputF) > -1) {
             indProd[i].style.display = "block";
         } else {
@@ -54,12 +54,12 @@ function sortGenre() {
 
     for (let i = 0; i < indProd.length; i++) {
         //creating array of different genre  options from  DB utilizing genre-magic class created in above innerHTML
-        let genreArr = indProd[i].getElementsByClassName("genre-magic")  [0];
+        let genreArr = indProd[i].getElementsByClassName("genre-magic")[0];
         // getting textContent of that value
         let valGen = genreArr.textContent;
 
         if (genreInput === "All") {
-           indProd[i].style.display = "block"     
+            indProd[i].style.display = "block"
         } else if (valGen === genreInput) {
             indProd[i].style.display = "block";
         } else {
@@ -76,10 +76,10 @@ function sortPrice() {
     prodContainer.innerHTML = ""
     let sortSelect = document.getElementById("price").value;
 
-    if(sortSelect === "Highest") {
+    if (sortSelect === "Highest") {
         // condition ? exprIfTrue : exprIfFalse
         dataArr.sort((a, b) => (a.price < b.price) ? 1 : -1);
-    }  else if(sortSelect === "Lowest") {
+    } else if (sortSelect === "Lowest") {
         dataArr.sort((a, b) => (a.price > b.price) ? 1 : -1);
     }
 
@@ -97,14 +97,3 @@ function sortPrice() {
     //returned to take in as another factor if user want to sort by both drop downs
     sortGenre();
 }
-
-
-
-
-
-
-
-
-
-
-

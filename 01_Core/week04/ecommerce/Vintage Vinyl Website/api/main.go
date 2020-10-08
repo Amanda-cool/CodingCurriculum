@@ -25,7 +25,7 @@ type product struct {
 // global pointer to sql db  so we don't end up in random locations
 var db *sql.DB
 
-// Website can access the database, puts other users on whitelist for access, request made to API to allot permission to the domain
+// Whitelist for access, request made to API to allot permission to the domain
 func enableCors(w *http.ResponseWriter) {
 	(*w).Header().Set("Access-Control-Allow-Origin", "*")
 }
