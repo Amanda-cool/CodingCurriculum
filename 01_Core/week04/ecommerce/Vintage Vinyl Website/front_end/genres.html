@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genres</title>
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="assets/css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <header class="default_nav"></header>
+        <main>
+            <div class="search-container">
+                <input onkeyup="search()" id="search-box" type="text" placeholder="Search.." name="search" size="30"
+                    aria-label="search">
+                <div class="dropdown-filter" id="price-drop">
+                    <label for="price">Filter by Price</label>
+                    <select name="price" id="price" onchange="sortPrice()">
+                        <option value="" default selected>None</option>
+                        <option value="Highest">Highest</option>
+                        <option value="Lowest">Lowest</option>
+                    </select>
+                </div>
+
+                <div class="dropdown-filter" id="genre-drop">
+                    <label for="genres">Filter by Genre:</label>
+                    <select name="genres" id="genres" onchange="sortGenre()">
+                        <option value="All">All</option>
+                        <option value="Indie">Indie</option>
+                        <option value="Emo/Punk">Emo/Punk</option>
+                        <option value="Alternative">Alternative</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="record-container"></div>
+        </main>
+
+    </div>
+    <footer>
+        <p>&copy; Amanda Davis 2020</p>
+
+        <a href="https://www.facebook.com">
+            <i id="facebook" class="fa fa-facebook" aria-label="Facebook"></i>
+        </a>
+
+        <a href="https://www.instagram.com">
+            <i id="instagram" class="fa fa-instagram" aria-label="Instagram"></i>
+        </a>
+
+        <a href="https://www.google.com">
+            <i id="google" class="fa fa-google" aria-label="Google"></i>
+        </a>
+    </footer>
+    <script src="assets/js/nav.js"></script>
+    <script src="assets/js/genres.js"></script>
+</body>
+
+</html>

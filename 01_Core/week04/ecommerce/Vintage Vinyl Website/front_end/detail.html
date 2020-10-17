@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vinyl Details</title>
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <header class="default_nav">
+        </header>
+        <main class="main clearfix">
+            <div class="product_details">
+                <img src="assets/images/broken_social_scene.jpg" alt="broken" class="img_bss">
+
+                <div class="description">
+                    <p>Broken Social Scene - Feel Good Lost - (Gatefold LP Jacket, Remastered) (Vinyl)</p>
+                    <p>$25.98</p>
+                    <p class="product_desc">Brand new vinyl record. Remastered edition of Broken Social Scene's debut
+                        album.
+
+                        A1 I Slept With Bonhomme At The CBC 5:26
+                        A2 Guilty Cubicles 3:04
+                        A3 Love And Mathematics 5:44
+                        B1 Passport Radio 5:45
+                        B2 Alive In 85 5:14
+                        B3 Prison Province 1:42
+                        C1 Blues For Uncle Gibb 6:59
+                        C2 Stomach Song 4:29
+                        C3 Mossbraker 5:33
+                        D1 Feel Good Lost 1:51
+                        D2 Last Place 8:26
+                        D3 Cranley's Gonna Make It 5:24
+
+                        Please refer to the shipping and payments tab above for postage rates. We ship at 6:00 pm
+                        eastern on weekdays and 12:45 pm on Saturdays. Orders made before 5:45 pm on weekdays or 12:30
+                        pm on Saturdays ship same day.</p>
+
+
+                    <form method="POST">
+                        <div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value">-</div>
+                        <input type="number" id="number" value="0" />
+                        <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value">+</div>
+                        <button class="btn cart">Add to Cart</button>
+                    </form>
+                </div>
+
+            </div>
+        </main>
+        <footer>
+            <p>&copy; Amanda Davis 2020</p>
+
+            <a href="https://www.facebook.com">
+                <i id="facebook" class="fa fa-facebook" aria-label="Facebook"></i>
+            </a>
+
+            <a href="https://www.instagram.com">
+                <i id="instagram" class="fa fa-instagram" aria-label="Instagram"></i>
+            </a>
+
+            <a href="https://www.google.com">
+                <i id="google" class="fa fa-google" aria-label="Google"></i>
+            </a>
+        </footer>
+    </div>
+    <script src="assets/js/quantityProduct.js"></script>
+    <script src="assets/js/nav.js"></script>
+</body>
+
+</html>

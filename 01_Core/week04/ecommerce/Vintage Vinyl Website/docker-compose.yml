@@ -1,0 +1,59 @@
+version: '3'
+# what web or redis services will be used and isolated
+services:
+
+  database:
+    # build the dockerfile in the folder database
+    build: 
+        context: ./database
+    # table and credentials for SQL
+    environment: 
+        MYSQL_ROOT_PASSWORD: "${DB_PASSWORD}"
+        MYSQL_DATABASE: vrp
+    # give the container a name so we can refer to it later rather than using an ID
+    container_name: database
+    # map the mysql port 3306, used sudo lsof to override permissions and find, then killed the previous running port, then used docker compose up
+    ports:
+        - "3306:3306"
+    # connects to backend
+    networks: 
+        - backend
+    # database will only communicate with backend 
+  api:
+    # give a name for reference
+    container_name: api_go
+    #build dockerfile in the folder back_end
+    build:
+        context: ./api
+    env_file: .env
+    # go is flexible on port setup so these are not pre-defined
+    ports: 
+        - "2000:2000"
+    # exposing port because the port is not pre-defined to allow for ease of search for go file???
+    expose: 
+        - "2000"
+    networks: 
+        - backend
+        - frontend
+    depends_on: 
+        - database
+    # api can communicate with both frontend and backend as the middle man
+  front_end:
+    build: 
+        context: ./front_end
+    container_name: frontend
+    # first port is me and second port is required due to predetermined nginx
+    ports: 
+        - "4000:80"
+    networks: 
+        - frontend
+    # front_end only communicated with frontend network
+    depends_on: 
+    # depends_on utilizes the service name to tell it what order to build things in
+        - database
+        - api
+networks: 
+    backend: 
+    frontend:
+    
+

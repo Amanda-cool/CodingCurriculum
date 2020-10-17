@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <header class="default_nav"></header>
+        <main class="main clearfix">
+            <form class="container_contact" method="post">
+                <fieldset>
+                    <legend>Contact Us!</legend>
+
+                    <div class="preference">
+                        <label class="space-con" for="contact_first_name">First Name</label>
+                        <input type="text" id="contact_first_name" required>
+                    </div>
+
+                    <div class="preference">
+                        <label class="space-con" for="contact_last_name">Last Name</label>
+                        <input type="text" id="contact_last_name" required>
+                    </div>
+
+                    <label for="contact" class="preference">Preferred Contact Method:</label>
+                    <div class="preference">
+                        <input type="radio" id="phone" name="contact_method" value="phone">
+                        <label for="phone" class="preferred">Phone</label>
+                    </div>
+
+                    <div class="preference">
+                        <input type="radio" id="email" name="contact_method" value="email">
+                        <label for="email" class="preferred">Email</label>
+                    </div>
+                    <div class="phone_number">
+                        <label class="space-con" for="contact_phone">Phone</label>
+                        <input type="tel" id="contact_phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                            placeholder="877-555-4321" required>
+                    </div>
+
+                    <div class="email_address">
+                        <label class="space-con" for="contact_email">Email</label>
+                        <input type="email" id="contact_email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                            required>
+                    </div>
+                    <div class="ref-con">
+                        <p> How did you hear about us?</p>
+                        <input type="checkbox" id="tv" name="tv" value="TV" class="radio_ref">
+                        <label for="tv"> TV</label>
+                        <input type="checkbox" id="radio" name="radio" value="Radio" class="radio_ref">
+                        <label for="radio"> Radio</label>
+                        <input type="checkbox" id="friend" name="friend" value="Friend" class="radio_ref">
+                        <label for="friend"> Friend</label>
+                        <input type="checkbox" id="conference" name="conference" value="Conference" class="radio_ref">
+                        <label for="conference"> Conference</label>
+                    </div>
+
+                    <label for="comments" class="preference">Comments:</label>
+
+                    <textarea id="comments" name="comments" rows="7" cols="50"
+                        placeholder="Please leave any questions or comments and we will get back to you ASAP."
+                        required></textarea>
+                    <input type="submit" value="Submit">
+                </fieldset>
+            </form>
+            <div class="contact_image">
+                <img src="assets/images/heart_band.png" alt="heart_band" class="heart_image">
+            </div>
+        </main>
+    </div>
+    <footer>
+        <p>&copy; Amanda Davis 2020</p>
+
+        <a href="https://www.facebook.com">
+            <i id="facebook" class="fa fa-facebook" aria-label="Facebook"></i>
+        </a>
+
+        <a href="https://www.instagram.com">
+            <i id="instagram" class="fa fa-instagram" aria-label="Instagram"></i>
+        </a>
+
+        <a href="https://www.google.com">
+            <i id="google" class="fa fa-google" aria-label="Google"></i>
+        </a>
+    </footer>
+
+    <script src="assets/js/nav.js"></script>
+</body>
+
+</html>
